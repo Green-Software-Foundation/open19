@@ -126,36 +126,200 @@ The connectors are positioned within the brick as shown below:
 
 We have two type of pinout definitions, one for the fully specialized Open19 switch and the other for general purpose switches. Please note different cables are used for the two options.
 
-**Table 1: Data Connector Pinout for Specialty Switch**
+<table border="1" style="border-collapse: collapse; width: 100%; text-align: center;">
+  <thead>
+    <tr style="background-color: #90EE90;">
+      <th colspan="5" style="padding: 10px; font-size: 18px; font-weight: bold;">Open19 Backplane Data connector</th>
+    </tr>
+    <tr style="background-color: #90EE90;">
+      <th style="padding: 8px;">Signal Description</th>
+      <th style="padding: 8px;">Net name</th>
+      <th colspan="2" style="padding: 8px;">Pin Number</th>
+      <th style="padding: 8px;">Net Name</th>
+      <th style="padding: 8px;">Signal Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Optional Console port</td>
+      <td style="padding: 8px;">Console TX</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">B1</td>
+      <td style="padding: 8px;">B2</td>
+      <td style="padding: 8px;">Console RX</td>
+      <td rowspan="2" style="padding: 8px;">Optional Console port</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SPARE (NC)</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">A1</td>
+      <td style="padding: 8px;">A2</td>
+      <td style="padding: 8px;">SPARE (NC)</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Switch to Server (1G)</td>
+      <td style="padding: 8px;">GE_SWITCH_BP_TX_N</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">D1</td>
+      <td style="padding: 8px;">D2</td>
+      <td style="padding: 8px;">GE_SWITCH_BP_RX_N</td>
+      <td rowspan="2" style="padding: 8px;">Server to Switch OOB (1G)</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">GE_SWITCH_BP_TX_P</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">C1</td>
+      <td style="padding: 8px;">C2</td>
+      <td style="padding: 8px;">GE_SWITCH_BP_RX_P</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Server to Switch port1 (25G TX)</td>
+      <td style="padding: 8px;">SERV1_TX_P</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">F1</td>
+      <td style="padding: 8px;">F2</td>
+      <td style="padding: 8px;">SERV2_TX_P</td>
+      <td rowspan="2" style="padding: 8px;">Server to Switch port2 (25G TX)</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SERV1_TX_N</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">E1</td>
+      <td style="padding: 8px;">E2</td>
+      <td style="padding: 8px;">SERV2_TX_N</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Switch to Server port1 (25G RX)</td>
+      <td style="padding: 8px;">SERV1_RX_P</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">H1</td>
+      <td style="padding: 8px;">H2</td>
+      <td style="padding: 8px;">SERV1_RX_P</td>
+      <td rowspan="2" style="padding: 8px;">Switch to Server port2 (25G RX)</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SERV1_RX_N</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">G1</td>
+      <td style="padding: 8px;">G2</td>
+      <td style="padding: 8px;">SERV1_RX_N</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">Ground Pin</td>
+      <td style="padding: 8px;">GND</td>
+      <td colspan="2" style="padding: 8px;">GND1...GND18</td>
+      <td style="padding: 8px;">GND</td>
+      <td style="padding: 8px;">Ground Pin</td>
+    </tr>
+  </tbody>
+</table>
 
-| Open19 Backplane Data connector | | | | |
-|--------------------------------|---------|------------|----------|---------------------|
-| Signal Description | Net name | Pin Number | Net Name | Signal Description |
-| Optional Console port | Console TX<br>SPARE (NC) | B1<br>A1 | B2<br>A2 | Console RX<br>SPARE (NC) | Optional Console port |
-| Switch to Server (1G) | GE_SWITCH_BP_TX_N<br>GE_SWITCH_BP_TX_P | D1<br>C1 | D2<br>C2 | GE_SWITCH_BP_RX_N<br>GE_SWITCH_BP_RX_P | Server to Switch OOB (1G) |
-| Server to Switch port1 (25G TX) | SERV1_TX_P<br>SERV1_TX_N | F1<br>E1 | F2<br>E2 | SERV2_TX_P<br>SERV2_TX_N | Server to Switch port2 (25G TX) |
-| Switch to Server port1 (25G RX) | SERV1_RX_P<br>SERV1_RX_N | H1<br>G1 | H2<br>G2 | SERV1_RX_P<br>SERV1_RX_N | Switch to Server port2 (25G RX) |
-| Ground Pin | GND | GND1...GND18 | GND | Ground Pin |
+**Table 1: Data Connector Pinout for Speciality Switch**
+
+
+<table border="1" style="border-collapse: collapse; width: 100%; text-align: center;">
+  <thead>
+    <tr style="background-color: #90EE90;">
+      <th colspan="5" style="padding: 10px; font-size: 18px; font-weight: bold;">Open19 Backplane Data connector</th>
+    </tr>
+    <tr style="background-color: #90EE90;">
+      <th style="padding: 8px;">Signal Description</th>
+      <th style="padding: 8px;">Net name</th>
+      <th colspan="2" style="padding: 8px;">Pin Number</th>
+      <th style="padding: 8px;">Net Name</th>
+      <th style="padding: 8px;">Signal Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Server to Switch port3 (25G TX)</td>
+      <td style="padding: 8px;">SERV3_TX_P</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">B1</td>
+      <td style="padding: 8px;">B2</td>
+      <td style="padding: 8px;">SERV4_TX_P</td>
+      <td rowspan="2" style="padding: 8px;">Server to Switch port4 (25G TX)</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SERV3_TX_N</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">A1</td>
+      <td style="padding: 8px;">A2</td>
+      <td style="padding: 8px;">SERV4_TX_N</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Server to Switch port3 (25G RX)</td>
+      <td style="padding: 8px;">SERV3_RX_P</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">D1</td>
+      <td style="padding: 8px;">D2</td>
+      <td style="padding: 8px;">SERV4_RX_P</td>
+      <td rowspan="2" style="padding: 8px;">Switch to Server port4 (25G RX)</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SERV3_RX_N</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">C1</td>
+      <td style="padding: 8px;">C2</td>
+      <td style="padding: 8px;">SERV4_RX_N</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Server to Switch port1 (25G TX)</td>
+      <td style="padding: 8px;">SERV1_TX_P</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">F1</td>
+      <td style="padding: 8px;">F2</td>
+      <td style="padding: 8px;">SERV2_TX_P</td>
+      <td rowspan="2" style="padding: 8px;">Server to Switch port2 (25G TX)</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SERV1_TX_N</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">E1</td>
+      <td style="padding: 8px;">E2</td>
+      <td style="padding: 8px;">SERV2_TX_N</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Switch to Server port1 (25G RX)</td>
+      <td style="padding: 8px;">SERV1_RX_P</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">H1</td>
+      <td style="padding: 8px;">H2</td>
+      <td style="padding: 8px;">SERV1_RX_P</td>
+      <td rowspan="2" style="padding: 8px;">Switch to Server port2 (25G RX)</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SERV1_RX_N</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">G1</td>
+      <td style="padding: 8px;">G2</td>
+      <td style="padding: 8px;">SERV1_RX_N</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">Ground Pin</td>
+      <td style="padding: 8px;">GND</td>
+      <td colspan="2" style="padding: 8px;">GND1...GND18</td>
+      <td style="padding: 8px;">GND</td>
+      <td style="padding: 8px;">Ground Pin</td>
+    </tr>
+  </tbody>
+</table>
 
 **Table 2: Data Connector Pinout for Standard Switch**
 
-| Open19 Backplane Data connector | | | | |
-|--------------------------------|---------|------------|----------|---------------------|
-| Signal Description | Net name | Pin Number | Net Name | Signal Description |
-| Server to Switch port3 (25G TX) | SERV3_TX_P<br>SERV3_TX_N | B1<br>A1 | B2<br>A2 | SERV4_TX_P<br>SERV4_TX_N | Server to Switch port4 (25G TX) |
-| Server to Switch port3 (25G RX) | SERV3_RX_P<br>SERV3_RX_N | D1<br>C1 | D2<br>C2 | SERV4_RX_P<br>SERV4_RX_N | Switch to Server port4 (25G RX) |
-| Server to Switch port1 (25G TX) | SERV1_TX_P<br>SERV1_TX_N | F1<br>E1 | F2<br>E2 | SERV2_TX_P<br>SERV2_TX_N | Server to Switch port2 (25G TX) |
-| Switch to Server port1 (25G RX) | SERV1_RX_P<br>SERV1_RX_N | H1<br>G1 | H2<br>G2 | SERV1_RX_P<br>SERV1_RX_N | Switch to Server port2 (25G RX) |
-| Ground Pin | GND | GND1...GND18 | GND | Ground Pin |
-
 #### Power Connector
 
-**Table 3: Power Connector Pinout**
 
-| Open19 Backplane Power connector | | | | |
-|----------------------------------|---------|--------|----------|---------------------|
-| Signal Description | Net name | Pin No | Net Name | Signal Description |
-| 12V Backplane power | VDD12V_BP | A1 | G1 | GND | Ground |
+<table border="1" style="border-collapse: collapse; width: 100%; text-align: center;">
+  <thead>
+    <tr style="background-color: #90EE90;">
+      <th colspan="5" style="padding: 10px; font-size: 18px; font-weight: bold;">Open19 Backplane Power connector</th>
+    </tr>
+    <tr style="background-color: #90EE90;">
+      <th style="padding: 8px;">Signal Description</th>
+      <th style="padding: 8px;">Net name</th>
+      <th colspan="2" style="padding: 8px;">Pin No</th>
+      <th style="padding: 8px;">Net Name</th>
+      <th style="padding: 8px;">Signal Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 8px;">12V Backplane power</td>
+      <td style="padding: 8px;">VDD12V_BP</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">A1</td>
+      <td style="padding: 8px;">G1</td>
+      <td style="padding: 8px;">GND</td>
+      <td style="padding: 8px;">Ground</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3: Power Connector Pinout**
 
 ### Brick Retention
 
@@ -286,36 +450,199 @@ The connectors are positioned within the DW brick as shown below:
 
 #### Data Connector
 
-**Table 4: Data Connector Pinout for Specialty Switch**
+<table border="1" style="border-collapse: collapse; width: 100%; text-align: center;">
+  <thead>
+    <tr style="background-color: #90EE90;">
+      <th colspan="5" style="padding: 10px; font-size: 18px; font-weight: bold;">Open19 Backplane Data connector</th>
+    </tr>
+    <tr style="background-color: #90EE90;">
+      <th style="padding: 8px;">Signal Description</th>
+      <th style="padding: 8px;">Net name</th>
+      <th colspan="2" style="padding: 8px;">Pin Number</th>
+      <th style="padding: 8px;">Net Name</th>
+      <th style="padding: 8px;">Signal Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Optional Console port</td>
+      <td style="padding: 8px;">Console TX</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">B1</td>
+      <td style="padding: 8px;">B2</td>
+      <td style="padding: 8px;">Console RX</td>
+      <td rowspan="2" style="padding: 8px;">Optional Console port</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SPARE (NC)</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">A1</td>
+      <td style="padding: 8px;">A2</td>
+      <td style="padding: 8px;">SPARE (NC)</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Switch to Server (1G)</td>
+      <td style="padding: 8px;">GE_SWITCH_BP_TX_N</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">D1</td>
+      <td style="padding: 8px;">D2</td>
+      <td style="padding: 8px;">GE_SWITCH_BP_RX_N</td>
+      <td rowspan="2" style="padding: 8px;">Server to Switch OOB (1G)</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">GE_SWITCH_BP_TX_P</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">C1</td>
+      <td style="padding: 8px;">C2</td>
+      <td style="padding: 8px;">GE_SWITCH_BP_RX_P</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Server to Switch port1 (25G TX)</td>
+      <td style="padding: 8px;">SERV1_TX_P</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">F1</td>
+      <td style="padding: 8px;">F2</td>
+      <td style="padding: 8px;">SERV2_TX_P</td>
+      <td rowspan="2" style="padding: 8px;">Server to Switch port2 (25G TX)</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SERV1_TX_N</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">E1</td>
+      <td style="padding: 8px;">E2</td>
+      <td style="padding: 8px;">SERV2_TX_N</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Switch to Server port1 (25G RX)</td>
+      <td style="padding: 8px;">SERV1_RX_P</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">H1</td>
+      <td style="padding: 8px;">H2</td>
+      <td style="padding: 8px;">SERV1_RX_P</td>
+      <td rowspan="2" style="padding: 8px;">Switch to Server port2 (25G RX)</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SERV1_RX_N</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">G1</td>
+      <td style="padding: 8px;">G2</td>
+      <td style="padding: 8px;">SERV1_RX_N</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">Ground Pin</td>
+      <td style="padding: 8px;">GND</td>
+      <td colspan="2" style="padding: 8px;">GND1...GND18</td>
+      <td style="padding: 8px;">GND</td>
+      <td style="padding: 8px;">Ground Pin</td>
+    </tr>
+  </tbody>
+</table>
 
-| Open19 Backplane Data connector | | | | |
-|--------------------------------|---------|------------|----------|---------------------|
-| Signal Description | Net name | Pin Number | Net Name | Signal Description |
-| Optional Console port | Console TX<br>SPARE (NC) | B1<br>A1 | B2<br>A2 | Console RX<br>SPARE (NC) | Optional Console port |
-| Switch to Server (1G) | GE_SWITCH_BP_TX_N<br>GE_SWITCH_BP_TX_P | D1<br>C1 | D2<br>C2 | GE_SWITCH_BP_RX_N<br>GE_SWITCH_BP_RX_P | Server to Switch OOB (1G) |
-| Server to Switch port1 (25G TX) | SERV1_TX_P<br>SERV1_TX_N | F1<br>E1 | F2<br>E2 | SERV2_TX_P<br>SERV2_TX_N | Server to Switch port2 (25G TX) |
-| Switch to Server port1 (25G RX) | SERV1_RX_P<br>SERV1_RX_N | H1<br>G1 | H2<br>G2 | SERV1_RX_P<br>SERV1_RX_N | Switch to Server port2 (25G RX) |
-| Ground Pin | GND | GND1...GND18 | GND | Ground Pin |
+**Table 4: Data Connector Pinout for Speciality Switch**
 
-**Table 5: Data Connector Pinout for Standard Switch**
 
-| Open19 Backplane Data connector | | | | |
-|--------------------------------|---------|------------|----------|---------------------|
-| Signal Description | Net name | Pin Number | Net Name | Signal Description |
-| Server to Switch port3 (25G TX) | SERV3_TX_P<br>SERV3_TX_N | B1<br>A1 | B2<br>A2 | SERV4_TX_P<br>SERV4_TX_N | Server to Switch port4 (25G TX) |
-| Server to Switch port3 (25G RX) | SERV3_RX_P<br>SERV3_RX_N | D1<br>C1 | D2<br>C2 | SERV4_RX_P<br>SERV4_RX_N | Switch to Server port4 (25G RX) |
-| Server to Switch port1 (25G TX) | SERV1_TX_P<br>SERV1_TX_N | F1<br>E1 | F2<br>E2 | SERV2_TX_P<br>SERV2_TX_N | Server to Switch port2 (25G TX) |
-| Switch to Server port1 (25G RX) | SERV1_RX_P<br>SERV1_RX_N | H1<br>G1 | H2<br>G2 | SERV1_RX_P<br>SERV1_RX_N | Switch to Server port2 (25G RX) |
-| Ground Pin | GND | GND1...GND18 | GND | Ground Pin |
+<table border="1" style="border-collapse: collapse; width: 100%; text-align: center;">
+  <thead>
+    <tr style="background-color: #90EE90;">
+      <th colspan="5" style="padding: 10px; font-size: 18px; font-weight: bold;">Open19 Backplane Data connector</th>
+    </tr>
+    <tr style="background-color: #90EE90;">
+      <th style="padding: 8px;">Signal Description</th>
+      <th style="padding: 8px;">Net name</th>
+      <th colspan="2" style="padding: 8px;">Pin Number</th>
+      <th style="padding: 8px;">Net Name</th>
+      <th style="padding: 8px;">Signal Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Server to Switch port3 (25G TX)</td>
+      <td style="padding: 8px;">SERV3_TX_P</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">B1</td>
+      <td style="padding: 8px;">B2</td>
+      <td style="padding: 8px;">SERV4_TX_P</td>
+      <td rowspan="2" style="padding: 8px;">Server to Switch port4 (25G TX)</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SERV3_TX_N</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">A1</td>
+      <td style="padding: 8px;">A2</td>
+      <td style="padding: 8px;">SERV4_TX_N</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Server to Switch port3 (25G RX)</td>
+      <td style="padding: 8px;">SERV3_RX_P</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">D1</td>
+      <td style="padding: 8px;">D2</td>
+      <td style="padding: 8px;">SERV4_RX_P</td>
+      <td rowspan="2" style="padding: 8px;">Switch to Server port4 (25G RX)</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SERV3_RX_N</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">C1</td>
+      <td style="padding: 8px;">C2</td>
+      <td style="padding: 8px;">SERV4_RX_N</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Server to Switch port1 (25G TX)</td>
+      <td style="padding: 8px;">SERV1_TX_P</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">F1</td>
+      <td style="padding: 8px;">F2</td>
+      <td style="padding: 8px;">SERV2_TX_P</td>
+      <td rowspan="2" style="padding: 8px;">Server to Switch port2 (25G TX)</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SERV1_TX_N</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">E1</td>
+      <td style="padding: 8px;">E2</td>
+      <td style="padding: 8px;">SERV2_TX_N</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Switch to Server port1 (25G RX)</td>
+      <td style="padding: 8px;">SERV1_RX_P</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">H1</td>
+      <td style="padding: 8px;">H2</td>
+      <td style="padding: 8px;">SERV1_RX_P</td>
+      <td rowspan="2" style="padding: 8px;">Switch to Server port2 (25G RX)</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SERV1_RX_N</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">G1</td>
+      <td style="padding: 8px;">G2</td>
+      <td style="padding: 8px;">SERV1_RX_N</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">Ground Pin</td>
+      <td style="padding: 8px;">GND</td>
+      <td colspan="2" style="padding: 8px;">GND1...GND18</td>
+      <td style="padding: 8px;">GND</td>
+      <td style="padding: 8px;">Ground Pin</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 5: Double Wide Brick Data Connector Pinout for Standard Switch**
 
 #### Power Connector
 
-**Table 6: Power Connector Pinout**
+<table border="1" style="border-collapse: collapse; width: 100%; text-align: center;">
+  <thead>
+    <tr style="background-color: #90EE90;">
+      <th colspan="5" style="padding: 10px; font-size: 18px; font-weight: bold;">Open19 Backplane Power connector</th>
+    </tr>
+    <tr style="background-color: #90EE90;">
+      <th style="padding: 8px;">Signal Description</th>
+      <th style="padding: 8px;">Net name</th>
+      <th colspan="2" style="padding: 8px;">Pin No</th>
+      <th style="padding: 8px;">Net Name</th>
+      <th style="padding: 8px;">Signal Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 8px;">12V Backplane power</td>
+      <td style="padding: 8px;">VDD12V_BP</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">A1</td>
+      <td style="padding: 8px;">G1</td>
+      <td style="padding: 8px;">GND</td>
+      <td style="padding: 8px;">Ground</td>
+    </tr>
+  </tbody>
+</table>
 
-| Open19 Backplane Power connector | | | | |
-|----------------------------------|---------|--------|----------|---------------------|
-| Signal Description | Net name | Pin No | Net Name | Signal Description |
-| 12V Backplane power | VDD12V_BP | A1 | G1 | GND | Ground |
+**Table 6: Power Connector Pinout**
 
 ### Brick Retention
 
@@ -431,36 +758,198 @@ The connectors are positioned within the brick as shown below:
 
 #### Data Connector
 
-**Table 7: Data Connector Pinout for Specialty Switch**
+<table border="1" style="border-collapse: collapse; width: 100%; text-align: center;">
+  <thead>
+    <tr style="background-color: #90EE90;">
+      <th colspan="5" style="padding: 10px; font-size: 18px; font-weight: bold;">Open19 Backplane Data connector</th>
+    </tr>
+    <tr style="background-color: #90EE90;">
+      <th style="padding: 8px;">Signal Description</th>
+      <th style="padding: 8px;">Net name</th>
+      <th colspan="2" style="padding: 8px;">Pin Number</th>
+      <th style="padding: 8px;">Net Name</th>
+      <th style="padding: 8px;">Signal Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Optional Console port</td>
+      <td style="padding: 8px;">Console TX</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">B1</td>
+      <td style="padding: 8px;">B2</td>
+      <td style="padding: 8px;">Console RX</td>
+      <td rowspan="2" style="padding: 8px;">Optional Console port</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SPARE (NC)</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">A1</td>
+      <td style="padding: 8px;">A2</td>
+      <td style="padding: 8px;">SPARE (NC)</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Switch to Server (1G)</td>
+      <td style="padding: 8px;">GE_SWITCH_BP_TX_N</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">D1</td>
+      <td style="padding: 8px;">D2</td>
+      <td style="padding: 8px;">GE_SWITCH_BP_RX_N</td>
+      <td rowspan="2" style="padding: 8px;">Server to Switch OOB (1G)</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">GE_SWITCH_BP_TX_P</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">C1</td>
+      <td style="padding: 8px;">C2</td>
+      <td style="padding: 8px;">GE_SWITCH_BP_RX_P</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Server to Switch port1 (25G TX)</td>
+      <td style="padding: 8px;">SERV1_TX_P</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">F1</td>
+      <td style="padding: 8px;">F2</td>
+      <td style="padding: 8px;">SERV2_TX_P</td>
+      <td rowspan="2" style="padding: 8px;">Server to Switch port2 (25G TX)</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SERV1_TX_N</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">E1</td>
+      <td style="padding: 8px;">E2</td>
+      <td style="padding: 8px;">SERV2_TX_N</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Switch to Server port1 (25G RX)</td>
+      <td style="padding: 8px;">SERV1_RX_P</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">H1</td>
+      <td style="padding: 8px;">H2</td>
+      <td style="padding: 8px;">SERV1_RX_P</td>
+      <td rowspan="2" style="padding: 8px;">Switch to Server port2 (25G RX)</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SERV1_RX_N</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">G1</td>
+      <td style="padding: 8px;">G2</td>
+      <td style="padding: 8px;">SERV1_RX_N</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">Ground Pin</td>
+      <td style="padding: 8px;">GND</td>
+      <td colspan="2" style="padding: 8px;">GND1...GND18</td>
+      <td style="padding: 8px;">GND</td>
+      <td style="padding: 8px;">Ground Pin</td>
+    </tr>
+  </tbody>
+</table>
 
-| Open19 Backplane Data connector | | | | |
-|--------------------------------|---------|------------|----------|---------------------|
-| Signal Description | Net name | Pin Number | Net Name | Signal Description |
-| Optional Console port | Console TX<br>SPARE (NC) | B1<br>A1 | B2<br>A2 | Console RX<br>SPARE (NC) | Optional Console port |
-| Switch to Server (1G) | GE_SWITCH_BP_TX_N<br>GE_SWITCH_BP_TX_P | D1<br>C1 | D2<br>C2 | GE_SWITCH_BP_RX_N<br>GE_SWITCH_BP_RX_P | Server to Switch OOB (1G) |
-| Server to Switch port1 (25G TX) | SERV1_TX_P<br>SERV1_TX_N | F1<br>E1 | F2<br>E2 | SERV2_TX_P<br>SERV2_TX_N | Server to Switch port2 (25G TX) |
-| Switch to Server port1 (25G RX) | SERV1_RX_P<br>SERV1_RX_N | H1<br>G1 | H2<br>G2 | SERV1_RX_P<br>SERV1_RX_N | Switch to Server port2 (25G RX) |
-| Ground Pin | GND | GND1...GND18 | GND | Ground Pin |
+**Table 7: Data Connector Pinout for Speciality Switch**
+
+<table border="1" style="border-collapse: collapse; width: 100%; text-align: center;">
+  <thead>
+    <tr style="background-color: #90EE90;">
+      <th colspan="5" style="padding: 10px; font-size: 18px; font-weight: bold;">Open19 Backplane Data connector</th>
+    </tr>
+    <tr style="background-color: #90EE90;">
+      <th style="padding: 8px;">Signal Description</th>
+      <th style="padding: 8px;">Net name</th>
+      <th colspan="2" style="padding: 8px;">Pin Number</th>
+      <th style="padding: 8px;">Net Name</th>
+      <th style="padding: 8px;">Signal Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Server to Switch port3 (25G TX)</td>
+      <td style="padding: 8px;">SERV3_TX_P</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">B1</td>
+      <td style="padding: 8px;">B2</td>
+      <td style="padding: 8px;">SERV4_TX_P</td>
+      <td rowspan="2" style="padding: 8px;">Server to Switch port4 (25G TX)</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SERV3_TX_N</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">A1</td>
+      <td style="padding: 8px;">A2</td>
+      <td style="padding: 8px;">SERV4_TX_N</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Server to Switch port3 (25G RX)</td>
+      <td style="padding: 8px;">SERV3_RX_P</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">D1</td>
+      <td style="padding: 8px;">D2</td>
+      <td style="padding: 8px;">SERV4_RX_P</td>
+      <td rowspan="2" style="padding: 8px;">Switch to Server port4 (25G RX)</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SERV3_RX_N</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">C1</td>
+      <td style="padding: 8px;">C2</td>
+      <td style="padding: 8px;">SERV4_RX_N</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Server to Switch port1 (25G TX)</td>
+      <td style="padding: 8px;">SERV1_TX_P</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">F1</td>
+      <td style="padding: 8px;">F2</td>
+      <td style="padding: 8px;">SERV2_TX_P</td>
+      <td rowspan="2" style="padding: 8px;">Server to Switch port2 (25G TX)</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SERV1_TX_N</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">E1</td>
+      <td style="padding: 8px;">E2</td>
+      <td style="padding: 8px;">SERV2_TX_N</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Switch to Server port1 (25G RX)</td>
+      <td style="padding: 8px;">SERV1_RX_P</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">H1</td>
+      <td style="padding: 8px;">H2</td>
+      <td style="padding: 8px;">SERV1_RX_P</td>
+      <td rowspan="2" style="padding: 8px;">Switch to Server port2 (25G RX)</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SERV1_RX_N</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">G1</td>
+      <td style="padding: 8px;">G2</td>
+      <td style="padding: 8px;">SERV1_RX_N</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">Ground Pin</td>
+      <td style="padding: 8px;">GND</td>
+      <td colspan="2" style="padding: 8px;">GND1...GND18</td>
+      <td style="padding: 8px;">GND</td>
+      <td style="padding: 8px;">Ground Pin</td>
+    </tr>
+  </tbody>
+</table>
 
 **Table 8: Data Connector Pinout for Standard Switch**
 
-| Open19 Backplane Data connector | | | | |
-|--------------------------------|---------|------------|----------|---------------------|
-| Signal Description | Net name | Pin Number | Net Name | Signal Description |
-| Server to Switch port3 (25G TX) | SERV3_TX_P<br>SERV3_TX_N | B1<br>A1 | B2<br>A2 | SERV4_TX_P<br>SERV4_TX_N | Server to Switch port4 (25G TX) |
-| Server to Switch port3 (25G RX) | SERV3_RX_P<br>SERV3_RX_N | D1<br>C1 | D2<br>C2 | SERV4_RX_P<br>SERV4_RX_N | Switch to Server port4 (25G RX) |
-| Server to Switch port1 (25G TX) | SERV1_TX_P<br>SERV1_TX_N | F1<br>E1 | F2<br>E2 | SERV2_TX_P<br>SERV2_TX_N | Server to Switch port2 (25G TX) |
-| Switch to Server port1 (25G RX) | SERV1_RX_P<br>SERV1_RX_N | H1<br>G1 | H2<br>G2 | SERV1_RX_P<br>SERV1_RX_N | Switch to Server port2 (25G RX) |
-| Ground Pin | GND | GND1...GND18 | GND | Ground Pin |
-
 #### Power Connector
 
-**Table 9: Power Connector Pinout**
+<table border="1" style="border-collapse: collapse; width: 100%; text-align: center;">
+  <thead>
+    <tr style="background-color: #90EE90;">
+      <th colspan="5" style="padding: 10px; font-size: 18px; font-weight: bold;">Open19 Backplane Power connector</th>
+    </tr>
+    <tr style="background-color: #90EE90;">
+      <th style="padding: 8px;">Signal Description</th>
+      <th style="padding: 8px;">Net name</th>
+      <th colspan="2" style="padding: 8px;">Pin No</th>
+      <th style="padding: 8px;">Net Name</th>
+      <th style="padding: 8px;">Signal Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 8px;">12V Backplane power</td>
+      <td style="padding: 8px;">VDD12V_BP</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">A1</td>
+      <td style="padding: 8px;">G1</td>
+      <td style="padding: 8px;">GND</td>
+      <td style="padding: 8px;">Ground</td>
+    </tr>
+  </tbody>
+</table>
 
-| Open19 Backplane Power connector | | | | |
-|----------------------------------|---------|--------|----------|---------------------|
-| Signal Description | Net name | Pin No | Net Name | Signal Description |
-| 12V Backplane power | VDD12V_BP | A1 | G1 | GND | Ground |
+**Table 9: Power Connector Pinout**
 
 ### Brick Retention
 
@@ -570,36 +1059,199 @@ The connectors are positioned within the 2W2H brick as shown below:
 
 #### Data Connector
 
+<table border="1" style="border-collapse: collapse; width: 100%; text-align: center;">
+  <thead>
+    <tr style="background-color: #90EE90;">
+      <th colspan="5" style="padding: 10px; font-size: 18px; font-weight: bold;">Open19 Backplane Data connector</th>
+    </tr>
+    <tr style="background-color: #90EE90;">
+      <th style="padding: 8px;">Signal Description</th>
+      <th style="padding: 8px;">Net name</th>
+      <th colspan="2" style="padding: 8px;">Pin Number</th>
+      <th style="padding: 8px;">Net Name</th>
+      <th style="padding: 8px;">Signal Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Optional Console port</td>
+      <td style="padding: 8px;">Console TX</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">B1</td>
+      <td style="padding: 8px;">B2</td>
+      <td style="padding: 8px;">Console RX</td>
+      <td rowspan="2" style="padding: 8px;">Optional Console port</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SPARE (NC)</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">A1</td>
+      <td style="padding: 8px;">A2</td>
+      <td style="padding: 8px;">SPARE (NC)</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Switch to Server (1G)</td>
+      <td style="padding: 8px;">GE_SWITCH_BP_TX_N</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">D1</td>
+      <td style="padding: 8px;">D2</td>
+      <td style="padding: 8px;">GE_SWITCH_BP_RX_N</td>
+      <td rowspan="2" style="padding: 8px;">Server to Switch OOB (1G)</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">GE_SWITCH_BP_TX_P</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">C1</td>
+      <td style="padding: 8px;">C2</td>
+      <td style="padding: 8px;">GE_SWITCH_BP_RX_P</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Server to Switch port1 (25G TX)</td>
+      <td style="padding: 8px;">SERV1_TX_P</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">F1</td>
+      <td style="padding: 8px;">F2</td>
+      <td style="padding: 8px;">SERV2_TX_P</td>
+      <td rowspan="2" style="padding: 8px;">Server to Switch port2 (25G TX)</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SERV1_TX_N</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">E1</td>
+      <td style="padding: 8px;">E2</td>
+      <td style="padding: 8px;">SERV2_TX_N</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Switch to Server port1 (25G RX)</td>
+      <td style="padding: 8px;">SERV1_RX_P</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">H1</td>
+      <td style="padding: 8px;">H2</td>
+      <td style="padding: 8px;">SERV1_RX_P</td>
+      <td rowspan="2" style="padding: 8px;">Switch to Server port2 (25G RX)</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SERV1_RX_N</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">G1</td>
+      <td style="padding: 8px;">G2</td>
+      <td style="padding: 8px;">SERV1_RX_N</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">Ground Pin</td>
+      <td style="padding: 8px;">GND</td>
+      <td colspan="2" style="padding: 8px;">GND1...GND18</td>
+      <td style="padding: 8px;">GND</td>
+      <td style="padding: 8px;">Ground Pin</td>
+    </tr>
+  </tbody>
+</table>
+
 **Table 10: Data Connector Pinout for Speciality Switch**
 
-| Open19 Backplane Data connector | | | | |
-|--------------------------------|---------|------------|----------|---------------------|
-| Signal Description | Net name | Pin Number | Net Name | Signal Description |
-| Optional Console port | Console TX<br>SPARE (NC) | B1<br>A1 | B2<br>A2 | Console RX<br>SPARE (NC) | Optional Console port |
-| Switch to Server (1G) | GE_SWITCH_BP_TX_N<br>GE_SWITCH_BP_TX_P | D1<br>C1 | D2<br>C2 | GE_SWITCH_BP_RX_N<br>GE_SWITCH_BP_RX_P | Server to Switch OOB (1G) |
-| Server to Switch port1 (25G TX) | SERV1_TX_P<br>SERV1_TX_N | F1<br>E1 | F2<br>E2 | SERV2_TX_P<br>SERV2_TX_N | Server to Switch port2 (25G TX) |
-| Switch to Server port1 (25G RX) | SERV1_RX_P<br>SERV1_RX_N | H1<br>G1 | H2<br>G2 | SERV1_RX_P<br>SERV1_RX_N | Switch to Server port2 (25G RX) |
-| Ground Pin | GND | GND1...GND18 | GND | Ground Pin |
+<table border="1" style="border-collapse: collapse; width: 100%; text-align: center;">
+  <thead>
+    <tr style="background-color: #90EE90;">
+      <th colspan="5" style="padding: 10px; font-size: 18px; font-weight: bold;">Open19 Backplane Data connector</th>
+    </tr>
+    <tr style="background-color: #90EE90;">
+      <th style="padding: 8px;">Signal Description</th>
+      <th style="padding: 8px;">Net name</th>
+      <th colspan="2" style="padding: 8px;">Pin Number</th>
+      <th style="padding: 8px;">Net Name</th>
+      <th style="padding: 8px;">Signal Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Server to Switch port3 (25G TX)</td>
+      <td style="padding: 8px;">SERV3_TX_P</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">B1</td>
+      <td style="padding: 8px;">B2</td>
+      <td style="padding: 8px;">SERV4_TX_P</td>
+      <td rowspan="2" style="padding: 8px;">Server to Switch port4 (25G TX)</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SERV3_TX_N</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">A1</td>
+      <td style="padding: 8px;">A2</td>
+      <td style="padding: 8px;">SERV4_TX_N</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Server to Switch port3 (25G RX)</td>
+      <td style="padding: 8px;">SERV3_RX_P</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">D1</td>
+      <td style="padding: 8px;">D2</td>
+      <td style="padding: 8px;">SERV4_RX_P</td>
+      <td rowspan="2" style="padding: 8px;">Switch to Server port4 (25G RX)</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SERV3_RX_N</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">C1</td>
+      <td style="padding: 8px;">C2</td>
+      <td style="padding: 8px;">SERV4_RX_N</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Server to Switch port1 (25G TX)</td>
+      <td style="padding: 8px;">SERV1_TX_P</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">F1</td>
+      <td style="padding: 8px;">F2</td>
+      <td style="padding: 8px;">SERV2_TX_P</td>
+      <td rowspan="2" style="padding: 8px;">Server to Switch port2 (25G TX)</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SERV1_TX_N</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">E1</td>
+      <td style="padding: 8px;">E2</td>
+      <td style="padding: 8px;">SERV2_TX_N</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="padding: 8px;">Switch to Server port1 (25G RX)</td>
+      <td style="padding: 8px;">SERV1_RX_P</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">H1</td>
+      <td style="padding: 8px;">H2</td>
+      <td style="padding: 8px;">SERV1_RX_P</td>
+      <td rowspan="2" style="padding: 8px;">Switch to Server port2 (25G RX)</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SERV1_RX_N</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">G1</td>
+      <td style="padding: 8px;">G2</td>
+      <td style="padding: 8px;">SERV1_RX_N</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">Ground Pin</td>
+      <td style="padding: 8px;">GND</td>
+      <td colspan="2" style="padding: 8px;">GND1...GND18</td>
+      <td style="padding: 8px;">GND</td>
+      <td style="padding: 8px;">Ground Pin</td>
+    </tr>
+  </tbody>
+</table>
 
 **Table 11: Data Connector Pinout for Standard Switch**
 
-| Open19 Backplane Data connector | | | | |
-|--------------------------------|---------|------------|----------|---------------------|
-| Signal Description | Net name | Pin Number | Net Name | Signal Description |
-| Server to Switch port3 (25G TX) | SERV3_TX_P<br>SERV3_TX_N | B1<br>A1 | B2<br>A2 | SERV4_TX_P<br>SERV4_TX_N | Server to Switch port4 (25G TX) |
-| Server to Switch port3 (25G RX) | SERV3_RX_P<br>SERV3_RX_N | D1<br>C1 | D2<br>C2 | SERV4_RX_P<br>SERV4_RX_N | Switch to Server port4 (25G RX) |
-| Server to Switch port1 (25G TX) | SERV1_TX_P<br>SERV1_TX_N | F1<br>E1 | F2<br>E2 | SERV2_TX_P<br>SERV2_TX_N | Server to Switch port2 (25G TX) |
-| Switch to Server port1 (25G RX) | SERV1_RX_P<br>SERV1_RX_N | H1<br>G1 | H2<br>G2 | SERV1_RX_P<br>SERV1_RX_N | Switch to Server port2 (25G RX) |
-| Ground Pin | GND | GND1...GND18 | GND | Ground Pin |
-
 #### Power Connector
 
-**Table 12: Power Connector Pinout**
 
-| Open19 Backplane Power connector | | | | |
-|----------------------------------|---------|--------|----------|---------------------|
-| Signal Description | Net name | Pin No | Net Name | Signal Description |
-| 12V Backplane power | VDD12V_BP | A1 | G1 | GND | Ground |
+<table border="1" style="border-collapse: collapse; width: 100%; text-align: center;">
+  <thead>
+    <tr style="background-color: #90EE90;">
+      <th colspan="5" style="padding: 10px; font-size: 18px; font-weight: bold;">Open19 Backplane Power connector</th>
+    </tr>
+    <tr style="background-color: #90EE90;">
+      <th style="padding: 8px;">Signal Description</th>
+      <th style="padding: 8px;">Net name</th>
+      <th colspan="2" style="padding: 8px;">Pin No</th>
+      <th style="padding: 8px;">Net Name</th>
+      <th style="padding: 8px;">Signal Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 8px;">12V Backplane power</td>
+      <td style="padding: 8px;">VDD12V_BP</td>
+      <td style="padding: 8px; border-right: 2px solid orange;">A1</td>
+      <td style="padding: 8px;">G1</td>
+      <td style="padding: 8px;">GND</td>
+      <td style="padding: 8px;">Ground</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 12: Power Connector Pinout**
 
 ### Brick Retention
 
