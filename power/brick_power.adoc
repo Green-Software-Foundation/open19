@@ -1,0 +1,32 @@
+ifndef::imagesdir[:imagesdir: ../images]
+ifndef::brick[:brick: brick]
+ifndef::UBrick[:UBrick: Brick]
+ifndef::brickplus[:brickplus: brick]
+:xrefstyle: full
+
+= {UBrick} power connector
+
+The {brick} blind-mate power connector for receiving 48V DC (51V nominal) power from the power shelf. The connector mates with the power cable connector projected from the brick cage wall.
+
+Two variations of the {brick} connector exist, with different Not-to-exceed (NTE) ratings:
+
+- 35A Power Connector: Molex 2203700001 (NTE 35 AMPS) No Key
+- 70A Power Connector: Molex 2203700000 (NTE 70 AMPS) Keyed
+
+[#img-pressuredrop]
+.Power Connector keying
+image::power/open19_brick_supply_return_layout.png[]
+
+{sp} +
+
+Connector drawings are available: link:https://gitlab.com/open19/specification/uploads/27a1e5b936968240c9f96b25fd1b77e9/2203700000psd000_01__4_.pdf[Molex Brick power connectors]
+
+== {UBrick} voltage
+
+Open19 V2 power shares Open Compute ORV3 power characteristics. Open19 bricks shall safely operate in the DC range 48-52V and shall remain functional when exposed to 0-54V. The power rail shall not exceed 52.5V for more than 200mS. DC voltage shall never exceed 54V.
+
+- Operating range: 48-52V
+- NTE voltage: 54V
+- Max voltage: <=52.5V for <200mS
+
+
