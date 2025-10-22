@@ -1,0 +1,25 @@
+ifndef::imagesdir[:imagesdir: ../../images]
+ifndef::brick[:brick: brick]
+ifndef::UBrick[:UBrick: Brick]
+ifndef::brickplus[:brickplus: brick]
+ifndef::bricktype[:bricktype: shhw]
+
+= {Ubrick} Dimensions
+
+The {brick} is designed with the overall dimensions shown. 
+
+[#img-brick_dimensions]
+.{Ubrick} dimensions
+
+image::chapters/ch_brick_mechanical/{bricktype}_brick_dimensions.png[]
+
+{sp} +
+Please refer to the link:mechanical/brick/o19v2_{bricktype}_brick_form_spec.pdf[drawings], and 3D files for further details.
+
+The V1 specification for {brick}s defined 901.7mm as the overall length of the brick, including the thickness of the front panel.
+
+The dimension is modified to reference to the inside of the front panel to the rear of the brick.  This dimension is 900.50mm +/-0.60 from the rear face of the front panel (mating surface to the cage) to the outside of the rear panel.
+
+ifdef::dhhw,dwdh[]
+
+endif::[]
