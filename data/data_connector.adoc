@@ -1,0 +1,25 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+= Data Connector
+
+The data connector is rated for 56G PAM4 with an air dielectric. Variations of cables deliver different lane counts, data rates, and physical interfaces. In the reference Ethernet implementation, the data connector pinout explicitly supports a dedicated 10/100/1000Base-T management port, four 25G NRZ/50G PAM4 lanes. Optionally, a single QSFP-DD or two QSFP interfaces are supported.
+
+[#image-{bricktype}Impel_ISO]
+.Impel Connector with guide feature
+
+image::data/Impel_Open19V2_4x8.png[]
+
+{sp} +
+
+[#image-{bricktype}Impel_Mated]
+.Impel Mated connector with cable backshell
+
+image::data/Impel_Open19V2_4x8_Mated.png[]
+
+{sp} +
+
+
+
+The data connector pinout is defined in the <<Appendix>>
+
+There is no attempt to support 50G (2x25G NRZ) nor 50G (1x50G NRZ).
