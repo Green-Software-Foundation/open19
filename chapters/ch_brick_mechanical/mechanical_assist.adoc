@@ -1,0 +1,24 @@
+ifndef::imagesdir[:imagesdir: ../../images]
+ifndef::brick[:brick: brick]
+ifndef::UBrick[:UBrick: Brick]
+ifndef::brickplus[:brickplus: brick]
+:xrefstyle: full
+
+== {UBrick} insertion and retention assistance for liquid cooling
+
+For liquid cooling applications, two different mechanical assist for insertion and retention are available in the cage. {UBrick}s can implement features to make use either/both features.
+
+The features are:
+
+- {UBrick} retention standoff, available on both sides in the mechanical guide channel
+
+- Slots, available on both sides of the cage wall
+
+[#img-{bricktype}_brick_mechanical_assist]
+.Brick mechanical assistance features in cage
+
+image::chapters/ch_brick_mechanical/brick_mechanical_assist.png[leveloffset=3]
+
+{sp} +
+
+Each feature shall support 100 lbf (445N) force or greater, using the recommended 1.3mm SGCC material.

@@ -1,0 +1,30 @@
+ifndef::imagesdir[:imagesdir: ../../images]
+ifndef::brick[:brick: brick]
+ifndef::UBrick[:UBrick: Brick]
+ifndef::brickplus[:brickplus: brick]
+ifndef::bricktype[:bricktype: shhw]
+
+= PCBA
+
+The rear PCBA (Printed Circuit Board Assembly), also referenced as the interposer, provides the +48V DC input power and a data connections. The top of the PCBA is the reference surface, located 6.5mm +/- 0.6mm above the bottom surface of the sheet metal chassis.
+
+ifdef::dhhw,dwdh[]
+A second PCBA may be installed at 48.55mm +/- 0.5mm above the bottom surface of the chassis.
+endif::[]
+
+[#img-{bricktype}pcba_references]
+.PCBA References
+
+image::chapters/ch_brick_mechanical/{bricktype}_brick_pcb_references.png[]
+
+{sp} +
+
+[#img-{bricktype}brick-pcb_dimensions]
+.{UBrick} PCB dimensions
+
+image::chapters/ch_brick_mechanical/{bricktype}_brick_pcb_dimensions.png[]
+
+{sp} +
+ifdef::dhhw,dwdh[]
+One set of connectors are shown in the image. Two sets are available in a {brick}.
+endif::[]

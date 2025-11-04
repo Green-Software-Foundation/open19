@@ -1,0 +1,23 @@
+ifndef::imagesdir[:imagesdir: ../../images]
+ifndef::brick[:brick: brick]
+ifndef::UBrick[:UBrick: Brick]
+ifndef::brickplus[:brickplus: brick]
+ifndef::bricktype[:bricktype: shhw]
+
+= Keep-out zones
+
+Keep-out zones are defined in the {brick} surrounding the power connector and liquid cooling interfaces. The liquid cooling keep-out spaces "fly" above the PCB, allowing components to be populated below the connections.
+
+[#img-brick_keep-out_zone]
+.{UBrick} keep-out zone
+
+image::chapters/ch_brick_mechanical/{bricktype}_brick_keepout_zone.png[]
+
+{sp} +
+
+[#img-brick_keep-out_zone_top]
+.{UBrick} keep-out zone top view
+
+image::chapters/ch_brick_mechanical/{bricktype}_brick_keepout_zone_top.png[]
+{sp} +
+

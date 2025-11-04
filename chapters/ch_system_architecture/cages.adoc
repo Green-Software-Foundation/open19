@@ -1,0 +1,27 @@
+ifndef::imagesdir[:imagesdir: ../../images]
+
+= Open19 V2 Cages
+
+Open19 V1 defined a base building element, the brick cage, for building the Open19 infrastructure. The cage is a completely passive element able to receive any Open19 V2 compliant device. The brick definition governs cage dimensions (and visa versa). The cages are re-configurable to accommodate any Open19 V2 compliant brick.
+
+Open19 V2 introduces cut-outs and attachment features for liquid cooling manifolds, expanded cut-out for the larger blind-mate data connector, and expanded cut-out for the new power connector.
+
+== Cage modularity 
+
+Cages are designed to support all defined bricks. The current definition of bricks use a 2RU maximum format, enabling the following brick form-factors in each 2RU section:
+
+- (4) Single high Brick - Half-width 1RU [SHHW]
+- (2) Double high bricks - Half-width 2RU [DHHW]
+- (2) Single high bricks - double-width 1RU [SHDW]
+- (1) Double high brick - double-width 2RU [DHDW]
+
+The design package supports two cage form-factors, 8RU and 4RU. Additional cage groupings can be synthetically formed from these units, including the 12RU from the V1 spec. This enables extremely small deployments of 6RU (4RU cage + 2RU power shelf) with no upper limit.
+
+[#image-8RU-cage]
+.8RU Open19 V2 cage front
+
+image::chapters/ch_system_architecture/8rucagefront.png[]
+
+{sp} +
+
+

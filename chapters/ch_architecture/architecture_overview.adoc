@@ -1,0 +1,40 @@
+ifndef::imagesdir[:imagesdir: ../../images]
+
+ifndef::book[]
+image::logo-e1604492040874.png[]
+endif::[]
+
+= Open19 Architecture Overview
+
+== General
+
+This document will introduce the Open19 V2 architecture, built upon many of the original Open19 principles (referred to as Open19 V1). The significant changes from the V1 specification are:
+
+- Introduction of liquid cooling solutions in both single-phase and two-phase
+- Introduction of 48V DC power with no V1 interop
+- Increase in differential pairs for high-speed data with support for 56G PAM-4
+- Definition of a 4U brick cage
+
+The building blocks can be used to assemble working solutions, which can adapt to site-specific requirements. "Paved path" solutions are detailed in the implementers guide(s).
+
+The only "hard" requirement for Open19 is 1000mm deep 19" racks.
+
+== Background
+
+The Open19 specification defines a consistent mechanical standard for technology delivery. It addresses the operational complexity of standard 19" servers while maintaining an envelop to retain IP. Finally, it de-couples the infrastructure components from the technology allowing for extended life-cycles to meet sustainability goals. Open19 V2 builds on the foundational architecture of the original specification (retroactively termed Open19 V1).
+
+
+== Requirements
+
+Open19 maintains a minimal set of requirements:
+
+- Commodity EIA/TIA 19" square-hold 4-post rack. The rack is not defined; any EIA/TIA compatible rack able to support the final weight AND at least 1000mm deep can be used.
+- 10&#0176;C to 40&#0176;C ambient environment, in line with ASHRAE A1A
+- Water supply temperate meeting ASHRAE W27
+- Single-phase or three-phase AC power available world-wide in 50/60Hz and 380V HVDC
+
+Open19 V2 explicitly does NOT define a number of areas:
+
+- Rack height, depth, nor width
+- Rack level infrastructure including HRU/CDU's, rack coolant manifolds, power strips, and network switches.
+- Technology and cooling delivered inside the brick.

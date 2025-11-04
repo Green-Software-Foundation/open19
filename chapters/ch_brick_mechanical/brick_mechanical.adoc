@@ -1,0 +1,71 @@
+ifndef::imagesdir[:imagesdir: ../../images]
+
+:chapter:
+:sectnums:
+:toc: 
+
+= Open19 Brick Mechanical Specifications
+Linux Foundation Sustainable Scalable Infrastructure Alliance
+:title-page-background-image: image:logo-e1604492040874.png[fit=none,pdfwidth=50%]
+
+<<<
+[preface]
+
+include::../book/contributors.adoc[]
+
+<<<
+[preface]
+image::SSI-vertical.png[SSIA Logo, 500, 500, pdfwidth=40%, fit=none]
+
+The Sustainable & Scalable Infrastructure Alliance (SSIA) is a community-based organization dedicated to creating, fostering and driving adoption of open standards that increase the efficiencies of the data center and digital infrastructure supply chains.   We enable digital leaders from any sized organization to adopt and deploy advanced and highly efficient rack-level datacenter technologies to increase sustainability, power next-generation workloads and reduce cost and waste, regardless of deployment size or location.  
+
+SSIA members include data center operators, private and public cloud end users, supply chain manufacturers and technology component providers, as well as thousands of individual members active in the cloud, technology, data center and edge ecosystem.
+
+Learn more about joining the Linux Foundation SSI Alliance at http://www.ssia.org/about-us/.
+
+== Change log
+ifdef::liquid[]
+|===
+| Author | Date | Version | Change Details 
+| My Truong | November 2023 | 2.0 | Public Spec release
+|===
+endif::[]
+
+ifndef::liquid[]
+|===
+| Author | Date | Version | Change Details 
+| My Truong | November 2023 | 2.0 | V2 Spec release
+|===
+endif::[]
+<<<
+[preface]
+include::../book/definitions.adoc[]
+
+<<<
+
+== Open19 Bricks
+
+Four brick designs are the basis of Open19 V2. They are:
+
+- SHHW: Single-High Half-Width, "Brick"
+
+- DHHW: Double-High Half-Width
+
+- SHDW: Single-High Double-Width, 1RU server equivalent
+
+- DHDW: Double-High Double-Width, 2RU server equivalent
+
+:leveloffset: +1
+include::shhw_brick_architecture.adoc[]
+:leveloffset: -1
+:leveloffset: +1
+include::dhhw_brick_architecture.adoc[]
+:leveloffset: -1
+:leveloffset: +1
+include::shdw_brick_architecture.adoc[]
+:leveloffset: -1
+:leveloffset: +1
+include::dhdw_brick_architecture.adoc[]
+:leveloffset: -1
+
+include::../book/appendix.adoc[]
