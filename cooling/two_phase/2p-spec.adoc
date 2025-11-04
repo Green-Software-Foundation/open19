@@ -1,0 +1,149 @@
+ifndef::imagesdir[:imagesdir: ../../images/]
+
+= Dielectric two-phase cooling solution
+
+include::2p-spec_connectors.adoc[leveloffset=1]
+
+== Connector mounting polarization
+
+Cage manifolds shall have body (female) blind mate connectors. Bricks shall have insert (male) blind-mate connectors. When viewed from rear of the brick, vapor connection shall be located at the right position. Liquid connection shall be located at the left position.
+
+[#image-brick-polarization]
+.Brick liquid supply and Vapor return
+image::cooling/two_phase/image5.png[]
+
+{sp} +
+
+
+== Brick panel detail
+
+* The connectors on the brick side are panel mount with plastic hose connection
+** Mate connection type: Blind mate (non-latched).
+** G 1/4" male thread for the liquid side - needs to add a tube adaptor for 6mm OD tube (for example reference- PARKERS FEMALE STUD FITTING WITH BSPP FEMALE THREAD 6814 06 13)
+** G 1/2" thread for the vapor side- needs to add a tube adaptor for 12mm OD tube (for example reference- PARKERS FEMALE STUD FITTING WITH BSPP FEMALE THREAD 6814 12 21)
+* The connectors on the manifold side are parallel male thread
+** Mate connection type: Blind mate (non-latched).
+** G 1/4” for the liquid side
+** G 1/2" for the vapor side
+
+== Vapor connector ==
+
+The vapor connector pressure drop influences the saturated coolant temperature. It causes a slight increase to saturation temperature and by that effects the cooling performances.
+
+The CPC BLQ6 has a nominal diameter of 3/8 inch connector gives a max increase of 4.2°C at 3.5kW (0.24 bar pressure drop).
+
+[#image-two-phase-BLQ6]
+.CPC BLQ6 series connector pressure drop vs. power dissipation
+image::cooling/two_phase/two_phase_performance_BLQ6.png[]
+
+{sp} +
+
+== Liquid connector ==
+
+The liquid connector should supply max flow of 1 l/m to support the max power dissipation of 3.6 kW. The max recommended velocity of the system liquid lines is 2.5 m/s. This requires a Nominal diameter larger than 3mm.
+
+The CPC BLQ4 Series connector has a nominal diameter of 1/4 inch that exceeds the above requirement.
+
+include::2p-spec_connectors_detail.adoc[offsetlevel=2]
+
+include::2p-spec_manifold.adoc[leveloffset=2]
+
+include::2p-spec_brick_detail.adoc[leveloffset=2]
+
+
+
+= BLQ6 Spec
+
+Coupling material: Aluminum, anodized
+
+Plug material: Aluminum, anodized
+
+Valve: Polysulfone
+
+Seals: EPDM
+
+Flow Coefficient: Cv ~ 2.2
+
+Pressure Range: Vacuum to 120 psi, 8.3 bar
+
+Operating Temperature: 0°F to 240°F (-17°C to 115°C)
+
+[#image-BLQ6-performance-spec]
+.BLQ6 performance spec
+image::cooling/two_phase/image8.png[]
+
+{sp} +
+
+= BLQ4 Spec
+
+Coupling material: Brass, Chrome plated
+
+Plug material: Brass, Chrome plated
+
+Valve: Polysulfone
+
+Seals: EPDM
+
+Flow Coefficient: Cv ~ 1.3
+
+Pressure: Vacuum to 120 psi, 8.3 bar
+
+Temperature: 0°F to 240°F (-17°C to 115°C)
+
+[#image-BLQ4-performance-spec]
+.BLQ4 performance spec
+image::cooling/two_phase/image9.png[]
+
+{sp} +
+
+= Closing force
+
+[#image-BLQ6-performance-spec]
+.BLQ6 performance spec
+image::cooling/two_phase/image8.png[]
+
+{sp} +
+
+BLQ6 closing force is 40N without pressure effect and 65N at 1.85 barg vapor pressure (happens @ Tsat=70°C)
+
+[#image-BLQ4-performance-spec]
+.BLQ4 performance spec
+image::cooling/two_phase/image9.png[]
+
+{sp} +
+
+BLQ4 closing force is 40N without pressure effect and ~60N at 3 barg liquid pressure (extreme conditions).
+
+= Tested example solution
+
+Vapor connection:
+
+The vapor connection type are two 1" Tri-clamp Ferrule connection. From the manifold side- the fittings are welded into the lower and upper parts of the manifold.
+
+Vapor tubing- Shall be stainless steel corrugated tubes type.
+
+Liquid connection:
+
+The liquid connection shall be with a 1/2" Tri-clamp Ferrule connection. the left-lower part (looking from the back of the cage).
+
+Liquid tubing: Shall be stainless steel corrugated tubes type.
+
+[#image-2P-8RU-manifold rear]
+.8RU manifold, rear view
+image::cooling/two_phase/image10.png[]
+
+{sp} +
+
+[#image-2P-8RU-manifold front]
+.8RU manifold, front view
+
+image::cooling/two_phase/image11.png[]
+
+{sp} +
+
+[#image-2P-full-solution]
+.Example full solution
+
+image::cooling/two_phase/image12.png[]
+
+{sp} +
