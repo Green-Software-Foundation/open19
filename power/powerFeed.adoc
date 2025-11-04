@@ -1,0 +1,16 @@
+=== Power Shelf Infeed
+
+The power shelf shall support the following single-phase, three-phase, and 380V HVDC commonly available world-wide:
+
+[%header, cols="6*"]
+|===
+| AC/DC type | Min | Nominal | Max | Units | Notes
+
+| AC Low-line (per phase) | 90 | 100 - 120 | 132 | VAC | 3W+N+PE/3W+PE
+| AC High-line (per phase) | 180 | 200-240 | 264 | VAC | 3W+PE
+| AC Low-line (phase-to-phase) | 155 | 172-208 | 229 | VAC | 3W+PE
+| AC High-line (phase-to-phase) | 311 | 346-415 | 457| VAC | 3W+N+PE
+| AC Input frequency | 47 | 50/60 | 63 | Hz | - 
+| HVDC Input | 192 | 240/380 | 400 | VDC | -
+
+|===
