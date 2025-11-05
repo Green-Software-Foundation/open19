@@ -4,5 +4,8 @@ This project contains the Open19 V1 specifications.  The latest version of the s
 
 If you are interested in participating in the Open19 V2 Specification discussions, look at the RFC Discussions Working group. 
 
-**All documentation associated with a project must be licened under either a Creative Commons Attribution lincense (CC-BY) or, in the case of technical specifications under a Creative Commons Attribition NoDerivs licese (CC-BY-ND)**
+**All documentation associated with a project must be licensed under either a Creative Commons Attribution lincense (CC-BY) or, in the case of technical specifications, under a Creative Commons Attribution NoDerivs license (CC-BY-ND)**
+
+- [Open19-V1-Servers-specification](https://github.com/Green-Software-Foundation/open19/blob/v1.0/discussion-docs/Open19_V1_System_Level_Specification.pdf)
+- [Open19_V1_System_Level_Specification](https://github.com/Green-Software-Foundation/open19/blob/v1.0/discussion-docs/Open19_V1_System_Level_Specification.pdf)
 
