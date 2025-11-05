@@ -1,0 +1,47 @@
+ifndef::imagesdir[:imagesdir: ../../images]
+
+= 8RU Cage Manifold
+
+== Attachment points
+
+The 8RU cage provides consistent attachment points for both single-phase and two-phase liquid cooling manifolds. Two PEM nuts are available in every brick location.
+
+[#img-manifold-attachment-detail]
+.Manifold attachment
+
+image::chapters/ch_system_architecture/manifold_attachment.png[]
+
+{sp} +
+
+[#img-manifold-bracket-left]
+.Sample left manifold bracket
+
+image::chapters/ch_system_architecture/bracket_sample_left.png[]
+
+{sp} +
+
+[#img-manifold-bracket-right]
+.Sample right manifold bracket
+
+image::chapters/ch_system_architecture/bracket_sample_right.png[]
+
+{sp} +
+
+== Manifold
+
+The liquid cooling manifold is not interoperable between single-phase and two-phase, by design. The bricks provide a blind-mate projection from the brick into the liquid cooling manifold. 
+
+== Single-phase manifold
+:leveloffset: +2
+
+include::../../cooling/single_phase/1p-spec_manifold.adoc[]
+
+:leveloffset: -2
+
+== Two-phase manifold
+:leveloffset: +2
+
+include::../../cooling/two_phase/2p-spec_manifold.adoc[]
+
+:leveloffset: -2
+

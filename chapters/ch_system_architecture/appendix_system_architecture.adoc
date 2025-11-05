@@ -1,0 +1,14 @@
+ifndef::imagesdir[:imagesdir: ../../images]
+
+[appendix]
+ifdef::private[]
+
+= Appendix
+
+== 8RU Cage detailed drawings
+[#8RU-cage-detailed-drawings]
+.8RU Cage detailed drawings
+
+image::../mechanical/cage/O19V2_8RU_CAGE_FORM_SPEC_Rev5X.pdf[pages=1..6]
+
+{sp} +

@@ -1,0 +1,5 @@
+:toc:
+
+include::contributors.adoc[]
+include::../ch_system_architecture/system_architecture.adoc[]
+include::../ch_brick_mechanical/brick_mechanical.adoc[]

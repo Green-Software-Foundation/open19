@@ -1,0 +1,29 @@
+ifndef::imagesdir[:imagesdir: ../../images]
+ifndef::brick[:brick: brick]
+ifndef::UBrick[:UBrick: Brick]
+ifndef::brickplus[:brickplus: brick]
+ifndef::bricktype[:bricktype: shhw]
+
+= {Ubrick} Mechanical Keying
+
+Two keying notches are positioned in the left and right corners of the sheet metal enclosure as shown below. All dimensions below are critical.
+
+ifdef::liquid[]
+[#img-{bricktype}_brick_keying]
+.{Ubrick} keying
+endif::[]
+ifndef::liquid[]
+[#img-{bricktype}_brick_keying]
+.{Ubrick} keying, liquid cooling connections shall be defined in a future release
+endif::[]
+
+image::chapters/ch_brick_mechanical/{bricktype}_brick_mechanical_stop.png[]
+
+{sp} +
+
+[#img-{bricktype}_brick_keying_dimensions]
+.{Ubrick} keying dimensions
+
+image::chapters/ch_brick_mechanical/{bricktype}_brick_keying_dimensions.png[]
+
+{sp} + 

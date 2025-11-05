@@ -1,0 +1,12 @@
+=== Network switches
+For the initial Open19 V2 deployments, Equinix Metal will focus on 25GbE switches using SFP28 ports. A number of switch manufactures can fill this requirement. Good examples are:
+
+Nokia 7220 IXR-D2
+Juniper QFX5200-48Y
+Arista 7050SX3-48YC8
+
+==== Network switch orientation
+Network switch I/O panels (switch ports with SFP's) face the rear of the rack. The power supply cables exit the front of the rack.
+
+==== Network switch recess from rear rail
+No existing network switches are the same depth as Open19 cages. The worst-case design has 14.25" from the edge of an Open19 cage to the I/O panel of a network switch. 

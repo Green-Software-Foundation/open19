@@ -1,0 +1,3 @@
+= Materials
+
+The brick enclosure is constructed of sheet metal with adequate strength and rigidity. Suggested material is 0.8mm SGCC for the chassis base and 0.6mm SGCC for the top cover.

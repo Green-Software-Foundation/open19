@@ -1,0 +1,5 @@
+= 2RU Power Shelf connector pinout
+
+In a 2RU power shelf, the following table describes the grouping for four power connector sets. Rows A, B are the bottom RU of a power shelf. Rows C, D are the upper RU of a power shelf. When viewing the rear of the power shelf from the outside, column C1 is on the left and column C16 is on the right.
+
+

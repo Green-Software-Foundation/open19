@@ -1,0 +1,12 @@
+ifndef::imagesdir[:imagesdir: ../../images/]
+
+= Two-phase manifold specified dimensions =
+
+The x-direction from centerline to centerline of connectors in the same U is 27.0mm. The y-direction from centerline to centerline of connectors in the same 2U space of the cage is 42.05mm. The vertical spacing between connectors in separate but adjacent 2U spaces is 46.05mm (to account for the sheet metal thickness in the cage).
+
+[#image-manifold-connector-spacing]
+.Manifold and connectors location dimensions (from front)
+
+image::cooling/two_phase/image6.png[]
+
+{sp} +

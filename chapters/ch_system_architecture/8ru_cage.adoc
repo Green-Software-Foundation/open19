@@ -1,0 +1,184 @@
+ifndef::imagesdir[:imagesdir: ../../images]
+:plusmn: &#177;
+
+= 8RU Cage detail
+
+The 8RU cage is designed to be installed in a standard EIA/TIA 19-inch rack. The dimensions of cage allow for proper mating of all blind-mate interfaces on bricks. 
+
+== 8RU Cage dimensions
+
+[#image-8RU-cage-depth]
+.8RU Open19 V2 cage depth
+
+image::chapters/ch_system_architecture/8rucagedepth.png[]
+
+{sp} +
+
+[#image-8RU-cage-side]
+.8RU Open19 V2 cage depth side view
+
+image::chapters/ch_system_architecture/8rucagesidedepth.png[]
+
+{sp} +
+
+[#image-8RU-cage-rear]
+.8RU Open19 V2 cage rear
+
+image::chapters/ch_system_architecture/8rucagerear.png[]
+
+{sp} +
+
+
+== 8RU Cage partition
+
+The 8RU cage is built around a 2RU section, 84.7{plusmn}0.25mm tall and 443.80{plusmn}0.25mm wide. This section can accommodate a single DHDW brick or two SHDW bricks.
+
+== 8RU Cage Center divider (CD) partition
+
+With a center divider (CD) installed, each section can accommodate one of the following combinations:
+
+- One to four SHHW bricks
+- One or two DHHW bricks
+
+Dropped from the V2 spec is one DHHW plus one or two SHHW bricks.
+
+With the center divider installed, each 2RU section is 84.7{plusmn}0.25mm tall and 215.02{plusmn}0.25mm.
+
+== 8RU Cage Center Divider (CD)
+
+The Center Dividier (CD) is installed to support SHHW and DHHW bricks. Mechanical retention of the divider should be integrated into the divider. The Open19 V1 specification provides details on a reference CD design.
+
+[#image-8RU-cage-center-divider]
+.Open19 V2 cage Center Divider
+
+image::chapters/ch_system_architecture/center_divider.png[]
+
+{sp} +
+
+== Horizontal divider
+
+The horizontal divider partitions the cage in 2RU sections. Horizontal dividers shall have strips to provide a low-friction surface and minimize metal-on-metal contact.
+
+[#image-horizontal-divider]
+.Open19 Cage horizontal divider
+
+image::chapters/ch_system_architecture/open19_v2_cage_horizontal_divider.png[]
+
+{sp} +
+
+== Load capacity
+
+The 8RU cage can accommodate 16 bricks with a maximum 30lbs (13.6kg) each.
+
+== Brick Retention
+
+Each side wall contains eight (8) Southco D9-63-11 self-clinching receptacles that secure bricks with quarter-turn fasteners as the primary means of retention. 
+
+[#image-cage-retention-detail]
+.Cage retention quarter turn fastener locations
+
+image::chapters/ch_system_architecture/cage_retention_detail.png[]
+
+{sp} +
+
+For liquid cooling applications, additional features are available to provide sufficient mechanical assistance to overcome total connector forces. These features are detailed in the liquid cooling section.
+
+== Blind mate cutouts
+
+The rear wall of the 2RU space provides consistent cutouts for the cooling, data, and +48V DC power cables. 
+
+[#img-cage-panel-cutout]
+.Cage rear panel cutouts
+
+image::chapters/ch_system_architecture/cagepaneldetail.png[]
+
+{sp} +
+
+[#img-cage-panel-cutout-detail]
+.Cage rear panel cutout details
+
+image::chapters/ch_system_architecture/cagecutoutsdetail.png[]
+
+{sp} +
+
+== Keying stops
+
+Keying stops are provided in the right and left rear corners of each cage section. These stops (bent tabs) interface with notches in the brick sides to provide a positive stop during brick insertion and prevent over insertion or possible connector damage. They are positioned as shown.
+
+[#image-keying-stops]
+.Brick keying stops
+
+image::chapters/ch_system_architecture/keying_stops.png[]
+
+{sp} +
+
+== Mounting ear locations
+
+The primary cage mounting ear is positioned 40mm behind the front face of the cage side wall. Two additional positions are provided, 100mm and 200mm from the mounting ear surface to the front face of the cage side wall.
+
+[#image-mounting-ear-locations]
+.Cage mounting ear locations
+
+image::chapters/ch_system_architecture/mounting_ear_positions.jpg[align="center"]
+
+{sp} +
+
+These recommended locations are design guidance from V1 and may be adapted for specific applications.
+
+== Cage mounting rails
+
+Rack rails are the primary mechanism to support the cage during installation and use. A hook facilitates rail installation in square hole four-post racks. Rails should not protrude into the bottom surface of the cage.
+
+[#image-rack-rails]
+.Cage rack rails
+
+image::chapters/ch_system_architecture/cage_rack_rails.jpg[]
+
+{sp} +
+
+
+Installing rails should accommodate a range of rack post spacing from 28.5” to 36.0”. For other types of racks, a modified version of the rail can be developed.
+
+The rails should support:
+ 
+- Bare cage installed in a rack during shipping – cage mounting ear screws must secure cage in the rack
+- Bare cage installed in a data center rack – cage mounting ear screws not installed
+- Fully populated cage during installation into a rack
+- Fully populated cage during use – cage mounting ear screws must secure cage in the rack
+
+
+== Material
+
+The 8RU cage is designed to be constructed of SGCC sheet metal. 1.2mm (19 gauge steel) is the primary thickness used throughout, with 0.8mm and 1.6mm used on some stiffener panels, 1.88mm used for the cage mounting brackets and 2.38mm for the rails.
+ 
+The data and power connectors are built with a 1.20mm +/- 0.05mm expectation for latching mechanism. Panel thickness may be altered as required; the area surrounding the connectors shall remain 1.20mm +/- 0.05mm and shall maintain the 6.23mm face-to-face panel spacing.
+
+Two molded plastic parts are used on the cage assembly. These parts are identical to the V1 design.
+
+Sliders are used on the cage walls and center dividers to support bricks. Two sliders are used per brick side, 64 sliders are used in a cage fully populated with center dividers. Sliders are molded in Ultem 1000 resin.
+
+[#image-cage-slide]
+.Cage slide
+
+image::chapters/ch_system_architecture/cage_slide.jpg[]
+
+{sp} +
+
+Dowel pin inserts are used in ten (10) places in each center divider. These parts are molded in Ultem 1000 resin.
+
+[#image-cage-divider-mould]
+.Cage divider
+
+image::chapters/ch_system_architecture/cage_divider.jpg[]
+
+{sp} +
+
+Low-friction strips used on the horizontal dividers are made of black FR700-701 polycarbonate sheet with 3M 467 PSA applied.
+
+ifdef::private[]
+
+== Detailed drawings
+
+Detailed drawings of all the features are in <<8RU Cage detailed drawings>>.
+
+endif::[]

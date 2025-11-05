@@ -1,0 +1,15 @@
+== Definitions
+
+ASHRAE:: American Society of Heating, Refrigerating and Air-Conditioning Engineers
+
+ASHRAE W27:: ASHRAE specification for water temperature range from 2 &#176;C to 27 &#176;C
+
+OCP:: Open Compute Project
+
+SFP:: SNIA SFF-8402 SFP+ 1X Pluggable Transceiver Solution
+
+SNIA:: Storage Networking Industry Association
+
+QSFP:: SNIA SFF-8679 QSFP+ 4X Pluggable Transceiver Solution
+
+QSFP-DD:: QSFP-DD MSA QSFP DOUBLE DENSITY 8X AND QSFP 4X PLUGGABLE TRANSCEIVERS

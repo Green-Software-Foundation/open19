@@ -1,0 +1,38 @@
+= Power shelf
+
+Open19 V2 aligns with the OCP ORV3 power shelf and power characteristics on the +48V DC output. The departures from the OCP ORV3 specification are outlined in this document.
+
+== Power output
+
+The power shelf shall supply a touch-safe/ring-safe interface with per output safety and control to bricks. This is delivered with a consistent power cable assembly in either a 35A or 70A current-carrying SKU. 
+
+== Safety mechanisms & control
+
+Each output to bricks shall be "safety fused" at 35A or 70A, properly coordinated with the cable assembly installed. Each output shall have on/off ability under software control. Over-current protection shall have safe defaults that may be over-ridden by software.
+
+== Power output connector
+
+The power shelf shall use a consistent power connector for power distribution to bricks. The shelf connectors are Molex Open19 Power shelf recepticle housing, document number link:2203680000_sd.pdf[2203680000]. The pinout is defined in the link:Open19V2_Power_Connector_Brick_Map.pdf[Open19V2 Power Connector Brick Map] document.
+
+== Output grounding
+
+The power outputs shall be isolated from the chassis ground.
+
+== Controller
+
+The controller shall be responsible for output control, power on sequencing, and monitoring of control points. A reference implementation of control software based on the Linux Foundation OpenBMC implementation shall be made available. 
+
+Multiple controllers may be implemented.
+
+== Controller Network interface
+
+The controller shall have an 10/100/1000Base-T interface. Multiple network interfaces per controller may be available. 
+
+== Reset buttons and LED's
+
+Each controller should have a reset button and LED to indicate the status of the controller. The following color scheme can be used to indicate controller states:
+
+- LED off: Faulty controller
+- Orange LED: Controller booting
+- Green LED: Controller booted and active
+- Red LED: Control system faulty post-boot

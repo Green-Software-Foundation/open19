@@ -1,0 +1,81 @@
+ifndef::imagesdir[:imagesdir: ../../images/]
+
+= Two-phase brick side connector locations =
+
+Using the right-side panel of the brick as a reference, the Vapor return connector on the brick should be 31.85mm in the x direction and 20.73 upwards in the y direction.
+
+ifdef::shhw[]
+
+[#image-brick-connector-location]
+.Brick side connectors locations
+image::cooling/two_phase/shhw_supply_return_dimensions.png[]
+
+endif::[]
+
+ifdef::shdw[]
+
+[#image-brick-connector-location]
+.Brick side connectors locations
+image::cooling/two_phase/shdw_supply_return_dimensions.png[]
+
+endif::[]
+
+ifdef::dhhw[]
+
+[#image-brick-connector-location]
+.Brick side connectors locations
+image::cooling/two_phase/dhhw_supply_return_dimensions.png[]
+
+endif::[]
+
+ifdef::dhdw[]
+
+[#image-brick-connector-location]
+.Brick side connectors locations
+image::cooling/two_phase/dhdw_supply_return_dimensions.png[]
+
+endif::[]
+
+= Two-phase offset depth =
+
+The mating surface of the brick side connector sits xx mm behind (outside) the outer edge of the back plane of the brick. Specifying this dimension ensures the server manufacturer and manifold/cage side implementor have a consistent location where the connectors must meet to ensure full mating and thereby full flow.
+
+The reference mating surfaces of each connector are highlighted below along with a drawing showing the specified dimension.
+
+[#image-BLQ4-insert-mating-surface]
+.Mating surface BLQ4 insert
+image::cooling/two_phase/imagea8.png[]
+
+{sp} +
+
+[#image-BLQ4-body-mating-surface]
+.Mating surface BLQ4 body
+image::cooling/two_phase/imagea9.png[]
+
+{sp} +
+
+[#image-BLQ6-insert-mating-surface]
+.Mating surface BLQ6 insert
+
+image::cooling/two_phase/imagea10.png[]
+
+{sp} +
+
+[#image-BLQ6-body-mating-surface]
+.Mating surface BLQ6 body
+image::cooling/two_phase/imagea11.png[]
+
+{sp} +
+
+[#image-BLQ4-rear-panel-offset]
+.Offset from cage back panel to BLQ4 connector mating interface
+image::cooling/two_phase/imagea12.png[]
+
+{sp} +
+
+[#image-BLQ6-rear-panel-offset]
+.Offset from cage back panel to BLQ6 connector mating interface
+
+image::cooling/two_phase/imagea13.png[]
+
+The BLQ4 & BLQ6 connectors must be within ±1.5mm of this engaged state to achieve full flow.

@@ -1,0 +1,48 @@
+ifndef::imagesdir[:imagesdir: ../images]
+ifndef::brick[:brick: brick]
+ifndef::UBrick[:UBrick: Brick]
+ifndef::brickplus[:brickplus: brick]
+:xrefstyle: full
+
+= {UBrick} power connector
+
+The {brick} blind-mate power connector for receiving 48V DC (51V nominal) power from the power shelf. The connector mates with the power cable connector projected from the brick cage wall.
+
+Two variations of the {brick} connector exist, with different Not-to-exceed (NTE) ratings:
+
+- 35A Power Connector: Molex 2203700001 (NTE 35 AMPS) No Key
+- 70A Power Connector: Molex 2203700000 (NTE 70 AMPS) Keyed
+
+[#img-{bricktype}power-connector-pins]
+.Power connector supply/return definition
+image::power/open19_brick_supply_return_layout.png[]
+
+{sp} +
+
+[#image-{bricktype}power-connector-footprint]
+.Power connector footprint definition
+image::power/brick_power_connection_footprint.png[]
+
+{sp} +
+
+Connector drawings are available: link:2203700000psd000_03.pdf[Molex Brick power connector]
+
+= {Ubrick} critical dimensions
+
+The {brick} power connector has a critical dimension for the projection from the brick panel. Spacing between panels is 6.23mm. The power connector shall be proud of the panel 4.40mm.
+
+[#img-{bricktype}brick-power-critical_dimensions]
+.Power connector critical dimensions
+image::power/brick_power_connector_panel_location.png[]
+
+{sp} +
+
+= {UBrick} voltage
+
+Open19 V2 power shares Open Compute ORV3 power characteristics. Open19 bricks shall safely operate in the DC range 48-52V and shall remain functional when exposed to 0-54V. The power rail shall not exceed 52.5V for more than 200mS. DC voltage shall never exceed 54V.
+
+- Operating range: 48-52V
+- NTE voltage: 54V
+- Max voltage: <=52.5V for <200mS
+
+

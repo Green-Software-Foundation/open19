@@ -1,0 +1,23 @@
+= Desired Cisco Brick Architecture
+
+Cisco is pursuing an overall architecture of as near as reasonable a _Net Zero_ architecture in our equipment and services as possible.  Our project also has a design model that favors an increased blast radius, and scale out, _vs._ scale up unless application demands can not be met in a scale out architecture.
+
+With that in mind, we have a few design guidelines for our Open19v2 system design.  They are similar to, but not directly matching the similar Equinix requirements.  For a deeper understanding of our networking requirements, please see the [Network Switching Architecture](Cisco Network Switching Architecture section).
+
+Networking:: All bricks *MUST* support at a minimum, 2x 50GE links on the brick-side Impel connector.  Bricks *MAY* support either 4x 50GE or 2x 100GE.  Within an eighteen to twenty-four month horizon, this may become a hard requirement.
+
+CPU & Memory:: All bricks *SHOULD* support single-socket deployments that support high core-count CPUs.  All bricks *SHOULD* support between eight and sixteen GB of RAM per physical core for multi-threaded architectures, and four and sixteen GB of RAM per physical core for single-threaded CPU architectures.
+
+CPU Architecture:: Cisco is immediately interested in deploying x64 and aarch64 architectures.
+
+Voltage:: Cisco is interested in +48vDC native motherboards as soon as they can reasonably be produced.
+
+Storage:: Cisco's desire is for most bricks to use E1S-format storage.  This storage does not need to be front-panel accessible (see cooling).
+
+Cooling::  Much like Equinix, Cisco's requirement is that bricks *MUST NOT* exhaust more than 400w to 500w of heat via air cooling.  All other heat must be rejected via a liquid cooling system.  All bricks *SHOULD* have the capability to reject all heat load via a liquid cooling loop, as soon as practical.
+
+== A Further Note on Cooling
+
+Cisco is potentially interested in a _flooded_ brick design where the brick is cooled by having the working volume of the brick sealed, and single phase coolant pumped into/out of the brick.  This is one of the drivers for the storage not being front-panel accessible.  This does need design work, and Cisco is interested in working with interested parties to develop a solution for this requirement.
+
+During the development of the Open19v2 brick physical specification development, an additional 6 Lbs of weight margin was added to the brick footprint to account for the density of most single phase coolants.

@@ -1,0 +1,8 @@
+== Open19 Bricks designed for Equinix
+=== 400W Thermal constrains
+Open19 V2 bricks designed for Equinix shall not dissipate more than 400W of power into air per 1U 1/2W brick. Any brick design >400W shall reject the heat into a liquid cooling solution. 
+
+==== Motivation
+The primary motivation for this design requirement is: A fully loaded rack of 64 bricks can deliver 25.6kW of heat into the air. This is the limit of a reasonable air-cooling density design for a data center without auxillary assistance (cooler doors, point-of-load cooling, etc.) 
+
+Secondary motivations are: Allowing existing brick designs to "retrofit" into V2 with some power converter work.

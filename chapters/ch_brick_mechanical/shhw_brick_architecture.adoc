@@ -1,0 +1,173 @@
+ifndef::imagesdir[:imagesdir: ../../images]
+ifndef::brick[:brick: brick]
+ifndef::UBrick[:UBrick: Brick]
+ifndef::brickplus[:brickplus: brick]
+:bricktype: shhw
+:shhw:
+:feedcount: 2
+:chapter:
+:xrefstyle: full
+
+ifdef::standalone[]
+:sectnums:
+:toc: macro 
+
+= {Ubrick} Mechanical Specification [SHHW]
+Linux Foundation Open19 Project
+:title-page-background-image: image:logo-e1604492040874.png[fit=none,pdfwidth=50%]
+// :page-foreground-image: image:ConfidentialDraft.png[opacity=10%]
+
+toc::[]
+
+<<<
+[preface]
+
+include::../book/contributors.adoc[]
+
+<<<
+
+[preface]
+image::SSI-vertical.png[SSIA Logo, 500, 500, pdfwidth=40%, fit=none]
+
+The Sustainable & Scalable Infrastructure Alliance (SSIA) is a community-based organization dedicated to creating, fostering and driving adoption of open standards that increase the efficiencies of the data center and digital infrastructure supply chains.   We enable digital leaders from any sized organization to adopt and deploy advanced and highly efficient rack-level datacenter technologies to increase sustainability, power next-generation workloads and reduce cost and waste, regardless of deployment size or location.  
+
+SSIA members include data center operators, private and public cloud end users, supply chain manufacturers and technology component providers, as well as thousands of individual members active in the cloud, technology, data center and edge ecosystem.
+
+Learn more about joining the Linux Foundation SSI Alliance at http://www.ssia.org/about-us/.
+
+== Change log
+
+|===
+| Author | Date | Version | Change Details 
+| My Truong | Nov 2023 | 2.0 | Liquid-cooled Spec release
+| My Truong | Nov 2022 | RC 3 | Power connector move towards liquid cooling cutout 
+| My Truong | Oct 2022  | RC2 | Power connector offset correction, 2P liquid cooling connector update 
+| My Truong | Sept 2022 | RC1 | 48V DC @70A, 4x8 data connector, liquid cooling 
+|===
+endif::[]
+
+<<<
+
+ifndef::standalone[]
+= {Ubrick} Mechanical Specification [SHHW]
+
+endif::[]
+== SHHW {ubrick}
+
+//ifdef::standalone[]
+//ifeval::[{doctype} == "article"]
+//
+//image::logo-e1604492040874.png[]
+//
+//endif::[]
+//endif::[]
+
+:leveloffset: +1
+
+The SHHW {brickplus} form-factor is a half-wide 1RU commonly used as the basis of 2U 4-node designs.
+
+<<<
+
+include::../../mechanical/brick/Brick_Dimensions.adoc[]
+
+:leveloffset: -1
+
+<<<
+
+== Mechanical features
+
+:leveloffset: +2
+
+include::retention.adoc[]
+
+include::mechanical_guide.adoc[]
+
+ifdef::liquid[]
+include::mechanical_assist.adoc[]
+endif::[]
+
+include::mechanical_key.adoc[]
+
+include::pcba.adoc[]
+
+include::materials.adoc[]
+
+include::blind_mate.adoc[]
+
+:leveloffset: -2
+
+=== Weight
+
+The maximum weight of the {brick}, when equipped with all drives and/or accessories, is 30lbs (13.6kg). This is an increase of 5lbs from V1.
+
+== Connector Pinout
+
+:leveloffset: +2
+
+include::../../power/brick_power.adoc[]
+
+include::../../data/data_connector.adoc[]
+
+include::../../data/ethernet_interop.adoc[]
+
+:leveloffset: -2
+
+<<<
+ifdef::liquid[]
+== Liquid cooling
+
+:leveloffset: +2
+
+include::brick_liquid_cooling.adoc[]
+
+:leveloffset: -2
+
+<<<
+endif::[]
+== Design guidance
+
+Design guidance is not a specification requirement. It is simple design guidance that can be implemented to simplify future needs, to meet certification requirements, or satisfy general fit & finish.
+
+=== {UBrick} faceplate guidance 
+
+The faceplate is notched above and below the fastener (See <<#img-shhw-brick-retention>>). Note that the faceplate can accommodate any type of ports or drives as needed and is not required to be fully perforated.
+
+Screws and/or rivets used to secure the top cover are flush to be under-flush. The vertical edges on the rear of the brick chassis base are coined to break sharp edges.
+
+=== Back panel safety perforation
+
+See below for typical dimensions of the airflow perforation. All dimensions below are critical.
+
+[#img-panel-perforation]
+.{UBrick} panel perforation
+
+image::chapters/ch_brick_mechanical/panel_perforation.png[]
+
+{sp} +
+
+:leveloffset: +3
+
+include::keepout.adoc[]
+
+:leveloffset: -3
+
+<<<
+
+== Brick performance
+
+:leveloffset: +2
+
+include::../../power/brick_startup.adoc[]
+
+:leveloffset: -2
+
+<<<
+
+ifdef::standalone[]
+
+include::../book/appendix.adoc[]
+
+endif::[]
+
+:!shhw:
+:!feedcount:

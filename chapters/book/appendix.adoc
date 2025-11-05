@@ -1,0 +1,48 @@
+ifndef::imagesdir[:imagesdir: ../../images]
+
+[Appendix]
+
+= Data connector pin assignments
+
+[#table-data-connector-pin-assignments]
+.Data connector pin assignments
+image::../data/Impel_Open19_4x8_Lane_assignments.pdf[pages=1]
+
+{sp} +
+
+ifdef::private[]
+
+== Private Appendix
+
+The following material is included for the convenience of Open19 members only. No redistribution to the public is permitted.
+
+=== Data connector sales drawing
+[#Molex-Impel-sales-drawing]
+.Molex Impel 4x8 Sales Drawing
+image::../data/2040669001-sdpsd000_02.pdf[pages=1..3]
+
+{sp} +
+
+=== Power connector sales drawing
+[#Molex-Ten60-sales-drawing]
+.Molex Ten60 Sales DRawing
+image::../power/2203700000psd000_03.pdf[pages=1..2]
+
+{sp} +
+ifdef::liquid[]
+=== Liquid connector spec sheet
+[#cpc-blq4-part]
+.CPC BLQ4 Spec Sheet
+image::../cooling/single_phase/BLQ4_SpecSheet.pdf[pages=1..2]
+
+{sp} +
+
+[#cpc-blq6-part]
+.CPC BLQ6 Spec Sheet
+image::../cooling/two_phase/blq6-spec-sheet.pdf[pages=1..2]
+
+{sp} +
+endif::[]
+endif::[]
+
+
