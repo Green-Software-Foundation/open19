@@ -1,0 +1,29 @@
+ifndef::imagesdir[:imagesdir: ../../images]
+ifndef::brick[:brick: brick]
+ifndef::UBrick[:UBrick: Brick]
+ifndef::brickplus[:brickplus: brick]
+:xrefstyle: full
+
+= Blind mate interfaces
+
+A {brick} is equipped with at least one set of blind mate connectors for receiving +48V DC power and transferring data with an external device, typically a network switch. Introduced in this version is are blind mate connections to facilitate liquid cooling. The connections mate with cable and manifold projections from the rear wall of the cage.
+
+- Power connector: Molex Ten60 PN: 220370-0001 (35A) 22037-0000 (70A), refer to Molex document link:../../power/2203700000psd000_01__4_.pdf[PSD-220370-0000]
+
+- Data connector: Molex 4x8 Impel with guide receptacle PN: 204066-9038 (PCB thickness 2.2-4.1mm), 204066-9138 (PCB thickness 1.0-1.9mm), refer to Molex document link:../../data/2040669001-sdpsd000_02[PSD-204066-9001]
+
+The power connector has two ratings:
+
+- Power: Not-To-Exceed (NTE) 70A at +48V DC
+- Power: Not-To-Exceed (NTE) 35A at +48V DC
+
+The ratings shall be coordinated with the power shelf. 35A bricks shall be enabled in 70A capable infrastructure. 70A bricks are keyed to prevent unsafe operation in 35A infrastructure.
+
+ifdef::dhhw,shdw[]
+The {brick} may populate a second set of connectors, as required.
+endif::[]
+
+ifdef::dhdw[]
+The {brick} may populate up to four sets of connectors, as required.
+endif::[]
+

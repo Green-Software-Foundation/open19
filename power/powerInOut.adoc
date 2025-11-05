@@ -1,0 +1,10 @@
+== Power Scope
+
+The V2 specification departs from the V1 +12V DC and introduces +48V DC (+50V nominal) to each brick, in order to address industry trends. The V2 brick power connector is mechanically incompatible with V1, by design.
+
+Areas out of scope:
+
+- Energy storage systems (ESS)
+
+include::powerFeed.adoc[]
+

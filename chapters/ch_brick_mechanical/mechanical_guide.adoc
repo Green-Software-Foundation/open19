@@ -1,0 +1,34 @@
+ifndef::imagesdir[:imagesdir: ../../images]
+ifndef::brick[:brick: brick]
+ifndef::UBrick[:UBrick: Brick]
+ifndef::brickplus[:brickplus: brick]
+ifndef::bricktype[:bricktype: shhw]
+
+= {Ubrick} mechanical guide
+
+ifdef::shhw,shdw[]
+Clearance channels are required along the top edges of the brick, extending forward from the rear panel to the back of the faceplate.
+endif::[]
+
+ifdef::dhhw,dhdw[]
+Clearance channels are required along the top edges of the brick and the sidewalls, extending forward from the rear panel to the back of the faceplate.
+endif::[]
+
+ifdef::shhw,shdw[]
+[#image-{bricktype}_Mechanical_Guide]
+.Mechanical guide at top edge of brick
+
+image::chapters/ch_brick_mechanical/{bricktype}_brick_mechanical_guide.png[]
+
+{sp} +
+
+endif::[]
+ifdef::dhhw,dhdw[]
+[#image-{bricktype}_Mechanical_Guide]
+.Mechanical guide at top edge and side walls of brick
+
+image::chapters/ch_brick_mechanical/{bricktype}_brick_mechanical_guide.png[]
+
+{sp} +
+
+endif::[]

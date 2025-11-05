@@ -1,0 +1,35 @@
+ifndef::imagesdir[:imagesdir: ../../images]
+ifndef::brick[:brick: brick]
+ifndef::UBrick[:UBrick: Brick]
+ifndef::brickplus[:brickplus: brick]
+:xrefstyle: full
+
+= {UBrick} liquid cooling
+
+{UBrick} liquid cooling is divided into two broad categories, single-phase and two phase. They are mutually incompatible and the designs are mechanically incompatible by design. All bricks inside a single cage are expected to be the same liquid cooling technology.
+
+:leveloffset: +1
+include::../../cooling/unified_cutout.adoc[]
+
+:leveloffset: -1
+= Single phase
+
+:leveloffset: +1
+include::../../cooling/single_phase/1p-spec_connectors.adoc[]
+
+include::../../cooling/single_phase/1p-spec_connectors_detail.adoc[]
+
+include::../../cooling/single_phase/1p-spec_brick_detail.adoc[]
+
+:leveloffset: -1
+
+= Two phase
+
+:leveloffset: +1
+include::../../cooling/two_phase/2p-spec_connectors.adoc[]
+
+include::../../cooling/two_phase/2p-spec_connectors_detail.adoc[]
+
+include::../../cooling/two_phase/2p-spec_brick_detail.adoc[]
+
+:leveloffset: -1

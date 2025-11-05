@@ -1,0 +1,21 @@
+== Open19 V2 Authors/Contributors
+
+ASRock Rack: Weishi Sa
+
+Cisco: Christopher Liljenstolpe
+
+CoolIT: Brandon Peterson
+
+Delta: Ralf Pieper
+
+Equinix: Doug Asay, Suresh Pichai, My D. Truong
+
+Inspur: John Leung, Kay Lu
+
+Molex: Liz Hardin, Keegan McGraw, Chuck Crandley, Jeff Joniak
+
+SE: Erin Mccann, Rob Bunger
+
+Vertiv: Roy Grantham
+
+ZutaCore: Shahar Belkin, Or Farjun

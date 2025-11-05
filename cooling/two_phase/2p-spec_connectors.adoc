@@ -1,0 +1,36 @@
+ifndef::imagesdir[:imagesdir: ../../images/]
+
+= Two-phase connector selection
+
+The two-phase cooling solution shall use the CPC BLQ family of interfaces.
+
+== On brick side
+
+[#image-blq4-insert]
+.Liquid - CPC BLQ4 series insert P/N BLQ4D47004PROTO (chrome plated brass) or P/N 4649800PROTO (Aluminum)
+image::cooling/two_phase/image1.png[]
+
+{sp} +
+
+[#image-blq6-insert]
+.Vapor - CPC BLQ6 series insert P/N 4650000PROTO (chrome plated brass)
+
+image::cooling/two_phase/image2.png[]
+
+{sp} +
+
+== On the Manifold side
+
+[#image-blq4-body]
+.Liquid - CPC BLQ4 series body P/N BLQ4D31004PROTO (chrome plated brass) or P/N  4649900PROTO (Aluminum)
+
+image::cooling/two_phase/image3.png[]
+
+{sp} +
+
+[#image-blq6-body]
+.Vapor - CPC BLQ6 series body P/N 4650200PROTO (chrome plated brass)
+
+image::cooling/two_phase/image4.png[]
+
+{sp} +

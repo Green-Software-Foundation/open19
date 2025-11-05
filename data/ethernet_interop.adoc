@@ -1,0 +1,39 @@
+= Ethernet interface inter-operability
+
+The inter-operability of bricks at deployment with Ethernet interfaces is critical. To support 25G NRZ, 50G PAM4, 100G (4x25G NRZ), 200G (4x50G PAM4), and 400G (8x50G PAM4), the following table:
+
+[cols="2,.^3,5"]
+|===
+|Port Count	|Data Rate	|Implementation Interface and order
+
+| 1 1.6+a| 25G NRZ
+
+50G PAM4 | SFP1
+| 2 | SFP1, SFP2
+| 3 | SFP1, SFP2, SFP3
+| 4 | SFP1, SPF2, SFP3, SPF4
+| 5 | SFP1, SPF2, SFP3, SPF4, QSFP1 LN 1
+| 6 | SFP1, SPF2, SFP3, SPF4, QSFP1 LN 1, QSFP2 LN 1
+| 1 1.4+a| 25G NRZ
+
+50G PAM4 | SFP1
+| 2 | SFP1, SFP2
+| 3 | SFP1, SFP2, SFP3
+| 4 | SFP1, SPF2, SFP3, SPF4
+| 5 1.2+a| 100G (4x25G)
+
+200G (4x50G PAM4) | SFP1, SPF2, SFP3, SPF4, QSFP1
+| 6 | SFP1, SPF2, SFP3, SPF4, QSFP1, QSFP2
+| 1 1.4+a| 25G NRZ
+
+50G PAM4 | SFP1
+| 2 | SFP1, SFP2
+| 3 | SFP1, SFP2, SFP3
+| 4 | SFP1, SPF2, SFP3, SPF4
+| 5 | 400G (8x50G PAM4) | QSFP-DD (QSFP1+QSFP2)
+
+200G (4x50G PAM4) | QSFP (SFP1+SFP2+SFP3+SFP4)
+| 2 | QSFP, QSFP1
+| 3 | QSFP, QSFP1, QSFP2
+
+|===

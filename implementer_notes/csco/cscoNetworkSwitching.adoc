@@ -1,0 +1,55 @@
+= Network Switching Architecture
+
+Cisco is basing it's switching in the cS project on 400 Gbps interface switches using 56 Gps PAM4 signalling, using the Cisco Nexus line of data center switches.
+
+We are deploying a completely non-blocking layer 3 _leaf-spine_ topology with  dual ToR switches where each server is connected to two independent ToRs.  In turn, each of those ToR switches is connected to at least 4 spine switches (in a small deployment) and up to 32 spine switches in the largest deployment.
+
+Management networking is provided by the management switches for all non-server management network needs.  Server management connection is in-band over a separate management VLAN that is only exposed to the BMC via _IPMI_.
+
+The ToR ports that are not connected in the spine racks (see the rack stackup diagram) are used for cluster egress and production / management physical (but not logical) interconnection.
+
+Each 8u cage is connected by two Open19v2 network cables, each cable connecting one 'column' of the cage.
+
+Each server Impel connector presents each server with two (2) pairs of circuits, each pair making up one PAM4 56 Gbps bi-directional lane.  Those lanes can be called _A_ and _B_.  From each server, the _A_ lane is connected to the _A_ ToR, and the _B_ lane is similarly connected to the _B_ ToR.
+
+Each Open19v2 cable then connects eight 50 Gbps Ethernet circuits to each of the two ToR switches in the rack.  That switch side connection is presented on 2x 400 Gbps QSFP-DD connectors, one carrying the _A_ circuits, and one carrying the _B_ circuits.
+
+The 8x QSFP-DD _A_ connectors (2x from each of the cages)footnote:[The spine racks only have 3 cages, leaving 2 connector ports on both of the ToR switches in those racks free, see the egress discussion above.] connect to eight of the sixteen QSFP-DD ports on the 9316D-GX _A_ ToR, with the pattern replicated on with the _B_ connectors and _B_ ToR.
+
+The Remaining eight QSFP-DD connections on each ToR provide the ToR-Spine layer interconnect.  These ports, and all of the Spine ports are terminated with _QSFP-DD DR4 MPO_ optics, which break the 400 Gbps interface into 4x 100 Gbps ethernet interfaces.  Those optical circuits are passed through a _fiber shuffler_ provided by Molex that is inserted between the ToR and Spine switches that grooms the fiber circuits to dramatically simplify FO cable management.  There is one shuffler per spine rack, and there are a pair of spine racks for every eight racks (spine racks included).
+
+The remaining two QSFP-DD ports on each ToR in the spine racks are terminated using QSFP-DD DR4 MPO optics that are broken out into 8x LC 100 Gbps connections for egress and management interconnect.
+
+== Alternate Modular Stackup
+
+In the Cisco stackup diagram, there is an _Alternate Modular Stackup_ diagram that does not identify any networking hardware.  At this juncture, Cisco is unwilling to discuss the networking implementation in this, other than to indicate that networking would be integrated within the design.
+
+== Switch Selection
+
+The switches currently identified for the project's Open19v2 implementation are:
+
+ToR switches:: Cisco Nexus 9316D-GX
+Spine switches:: Cisco Nexus 9332D-GX2
+Management switches:: Cisco Nexus C9348GC-FXP footnote:[This switch is not a PAM4 switch, but instead a 1/10 Gbps switch with PoE capability.  Cisco is using the PoE capability to power various support functions in the rack such as door locks, IP cameras, _etc._]
+
+== Rack Location & Orientation
+
+All switches are mounted to the rear face of the rack, on a plane with the rear mounting rails.  While this makes the power supply and fan modules inaccessible when the switches are mounted (too deep to reach from the front given the narrowness of 2U), Cisco will treat a switch as an FRU, and will just replace the switch in case of failure, electing to repair / replace components in depot.
+
+All switches are procured with _rear to port_ airflow.  If necessary, _switch ducting_ can be installed to insure that the switches draw 'clean' cool air from the front of the rack.
+
+== Open19v2 Cable
+
+Based on the rack stackups, Cisco will have two Open19v2 network cable variants.
+
+Both of the variants will have eight Impel server _drops_ spaced at 1U spacing.  Each drop will present two 50 Gbps Ethernet circuits to the server.  The switch end of the cable will have two QSFP-DD connectors, one carrying all eight _A_ channels, and one carrying all eight _B_ channels.  Those two QSFP-DD connectors will terminate into two directly stacked ToR switches.
+
+The variation is simply one of length.  In referring to the Cisco stackup diagrams, In both the _Leaf_ and _Spine_ racks, there are two cages directly adjacent to the ToR switches.  Therefore, the server drops make the cable approximately _8U_ long (plus allowance for slack)  Cisco is cleverly calling this cable the _Cisco 8U cable_.
+
+In the _Leaf_ racks, there are two more cages, each one separated from the ToR switches by one other 8U cage.  In the _Spine_ rack, there is only one cage that is separated from the ToRs by an 8U cage, with the 'upper' cage replaced by core networking gear.  Therefore, the _Leaf_ racks need cables to feed two 'distant' cages, where as the _Spine_ racks only need to feed one 'distant' cage.  Since the distance between the ToR and cage being served needs to include the intermediate cage (being passed over), that cable ends up being approximately 18U long.  Again, using the clever naming convention, that cable is called the _Cisco 18U cable_.
+
+Therefore, the cable requirements of each rack in the Cisco design include:
+
+Leaf Rack:: 4x _Cisco 8U Cable_, 4x _Cisco 18U Cable_, and 4x fiber trunk cables that are _each_ capable of connecting 4x QSFP-DD DR4 optics.
+
+Spine Rack:: 4x _Cisco 8U Cable_, 2x _Cisco 18U Cable_, and the same 4x fiber trunk cables as above.

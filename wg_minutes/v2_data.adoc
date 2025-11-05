@@ -1,0 +1,101 @@
+= Data working group
+
+== 2022 Feb 3
+
+No call for Lunar New Year
+
+== 2022 Jan 27
+=== Attendees
+* Keegan McGraw, Molex
+* My Truong, Equinix
+* Chuck Crandley, Molex
+* Bob Wu, Inspur
+* Claudia Chen, Inspur
+* Dexter Tseng, Inspur
+* Doug Asay, Equinix
+* Erin McCann, Schneider Electric
+* Fred Rebarber, Vertiv
+* John Leung, Inspur
+* Mahyar Fotovatjah, ASUS
+* Mealy Huang, Inspur
+* Mike Smith, Vertiv
+* Christopher Liljenstolpe, Cisco
+* Paul Chen, ASRock Rack
+* Peter Panfil, Vertiv
+* Samuel Cheung, ASUS
+* Spike Lin, Inspur
+* Suresh Pichai, Equinix
+* Weishi Sa, ASRock Rack
+* Wilson Hung, ASRock Rack
+* Fredrik Rovik, Serve The World
+* Idan Chiang, Inspur
+ 
+=== Discussion
+ 
+* Aligning schedules for prototype testing. A 4x8 daughter card is available in March/April. June is the target for 4x6.
+* Molex needs feedback on EMI or ESD requirements.
+* Quick discussion about optical variant. Will table for post V2 spec.
+* Drop calls for the next week for Lunar New Year. Calls will resume Feb 10.
+ 
+Action: Molex to present proposal for cable options on Feb 10
+
+== 2022 Jan 20
+=== Attendees
+* Keegan McGraw, Molex
+* My Truong, Equinix
+* Chuck Crandley, Molex
+* Bob Wu, Inspur
+* Claudia Chen, Inspur
+* Dexter Tseng, Inspur
+* Doug Asay, Equinix
+* Erin McCann, Schneider Electric
+* Fred Rebarber, Vertiv
+* John Leung, Inspur
+* Mahyar Fotovatjah, ASUS
+* Mealy Huang, Inspur
+* Mike Smith, Vertiv
+* Christopher Liljenstolpe, Cisco
+* Paul Chen, ASRock Rack
+* Peter Panfil, Vertiv
+* Samuel Cheung, ASUS
+* Spike Lin, Inspur
+* Suresh Pichai, Equinix
+* Weishi Sa, ASRock Rack
+* Wilson Hung, ASRock Rack
+* Fredrik Rovik, Serve The World
+* Idan Chiang, Inspur
+ 
+=== Discussion
+ 
+* Aligning schedules for prototype testing. A 4x8 daughter card is available in March/April. June is the target for 4x6.
+* Molex needs feedback on EMI or ESD requirements.
+* Quick discussion about optical variant. Will table for post V2 spec.
+* Drop calls for the next week for Lunar New Year. Calls will resume Feb 10.
+ 
+Action: Molex to present proposal for cable options on Feb 10
+
+== 2022 Jan 13
+
+=== Attendees
+* Fredrik Rovik, ServeTheWorld
+* Trishan de Lanerolle, Linux Foundation
+* John Leung, Inspur
+* Mahyar Fotovatjah, ASUS
+* Keegan McGraw, Molex
+* Chuck Crandley, Molex
+* Julian Shui, Delta
+* Fred Rebarber, Vertiv
+ 
+=== Discussion
+- 4x6 decision: Do all the server teams have feedback? We've provided models for everyone.
+
+  AI: Close decision in the next call
+
+- Require coordination of the openings for data/power/cooling.
+
+  AI: Molex (Chuck) to provide models for new panel cut-out. Will be incorporated by Vertiv.
+
+- Pinout: Equinix presented proposed pinout for feedback.
+
+  AI: ServeTheWorld (Frederik) to provide use-case feedback
+  AI: Cisco to provide QSFP-DD pinout example

@@ -1,0 +1,57 @@
+= Open19 Power Cabling
+
+The Open19 V2 power distribution cabling groups each half-cage (1/2 wide 1U) into a power connector on the power shelf. Each assembly is intended for a single cage. The V2 specification relaxes the requirement on the location of the power shelf and moves the assembly definition to an implementation guide. With the shift to +48V DC power, the signal integrity on the data cable at 50G-PAM4 typically provides implementation constraints. Power cable assemblies are expected to be longer with more variations than the V1 specification.
+
+Each cabling system is built for 8-channel aggregation. Each bundle is an array of power distribution cables (supply and return) and carries +48V DC (+51V nominal) to the bricks. Power shelf connectors are rated to carry 70A. Brick connectors may carry 35A or 70A. Cables shall be sized appropriately to handle the current and length. 
+
+== Open19 Power shelf connector
+
+Power shelves may implement any power connector that meets brick power requirements and brick inter-operability. The Open19 community has developed a power shelf connector set utilizing the Molex Coeur Socket (tm). Any power harness mating to the Couers Socket and Ten60 blade connector shall use the following design. Power shelf designs that do NOT implement the Coeur Socket, or interoperable connector, may propose alternate designs for inclusion to the specification. Brick connectors shall always interop with the 70A Ten60 blade connector.
+
+=== Power shelf connector
+
+The power shelf connector is a 70A rated assembly. It shall be used for all implementations 70A and less per power feed to bricks. A detect pin is used to indicate the type of assembly connected to the the power shelf.
+
+[#image-power-shelf-connector]
+.Power shelf connector
+
+image::chapters/ch_system_architecture/Coeur_power_shelf_connector.png[]
+
+{sp} +
+
+[#image-power-connector-in-panel-upper]
+.Power shelf connector mounted in panel, upper view
+
+image::power/power_shelf_connector_with_panel_upper.png[]
+
+{sp} +
+
+[#image-power-connector-in-panel-lower]
+.Power shelf connector mounted in panel, lower view
+
+image::power/power_shelf_connector_with_panel_lower.png[]
+
+{sp} +
+
+ifdef::private[]
+
+=== Power shelf connector pinout
+
+:leveloffset: +3
+
+include::../../power/power_shelf_2RU_connector_pinout.adoc[]
+
+[#image-2RU-power-shelf-connector-pinout]
+.2RU Power shelf connector pinout
+
+image::power/power_shelf_2ru_pinout.png[]
+
+{sp} +
+
+:leveloffset: -3
+
+endif::[]
+
+=== Power shelf universal input connectors
+
+The power shelf shall use input connectors common to OCP Open Rack V3. Refer to the link:https://www.opencompute.org/documents/ocp-spec-v1-0-orv3-power-shelf-universal-input-power-connector-pdf[Open Rack V3 Shelf AC Input connector V1.0] for detailed information.

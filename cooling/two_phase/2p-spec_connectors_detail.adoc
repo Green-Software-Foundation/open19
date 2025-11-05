@@ -1,0 +1,45 @@
+ifndef::imagesdir[:imagesdir: ../../images/]
+
+= Two-phase connector mounting polarization 
+
+Cage manifolds shall have body (female) blind mate connectors. Bricks shall have insert (male) blind-mate connectors. When viewed from rear of the brick, vapor connection shall be located at the right position. Liquid connection shall be located at the left position.
+
+ifdef::shhw[]
+
+[#image-brick-polarization]
+.Brick liquid supply and Vapor return
+image::cooling/two_phase/shhw_supply_return_dimensions.png[]
+
+{sp} +
+
+endif::[]
+
+ifdef::shdw[]
+
+[#image-brick-polarization]
+.Brick liquid supply and Vapor return
+image::cooling/two_phase/shhw_supply_return_dimensions.png[]
+
+{sp} +
+
+endif::[]
+
+ifdef::dhhw[]
+
+[#image-brick-polarization]
+.Brick liquid supply and Vapor return
+image::cooling/two_phase/shhw_supply_return_dimensions.png[]
+
+{sp} +
+
+endif::[]
+
+ifdef::dhdw[]
+
+[#image-brick-polarization]
+.Brick liquid supply and Vapor return
+image::cooling/two_phase/shhw_supply_return_dimensions.png[]
+
+{sp} +
+
+endif::[]

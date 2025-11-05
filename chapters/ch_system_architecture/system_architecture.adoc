@@ -1,0 +1,132 @@
+ifndef::imagesdir[:imagesdir: ../../images]
+
+:chapter:
+:xrefstyle: full
+
+ifdef::standalone[]
+:sectnums: 
+:toc: macro
+
+= Open19 System Specification
+Linux Foundation Sustainable Scalable Infrastructure Alliance
+:title-page-background-image: image:logo-e1604492040874.png[fit=none,pdfwidth=50%]
+
+toc::[]
+
+<<<
+[preface]
+
+include::../book/contributors.adoc[]
+
+<<<
+
+[preface]
+image::SSI-vertical.png[SSIA Logo, 500, 500, pdfwidth=40%, fit=none]
+
+The Sustainable & Scalable Infrastructure Alliance (SSIA) is a community-based organization dedicated to creating, fostering and driving adoption of open standards that increase the efficiencies of the data center and digital infrastructure supply chains.   We enable digital leaders from any sized organization to adopt and deploy advanced and highly efficient rack-level datacenter technologies to increase sustainability, power next-generation workloads and reduce cost and waste, regardless of deployment size or location.  
+
+SSIA members include data center operators, private and public cloud end users, supply chain manufacturers and technology component providers, as well as thousands of individual members active in the cloud, technology, data center and edge ecosystem.
+
+Learn more about joining the Linux Foundation SSI Alliance at http://www.ssia.org/about-us/.
+
+== Change log
+
+ifdef::liquid[]
+|===
+| Author | Date | Version | Change Details 
+| My Truong | Nov 2023 | 2.0 | Public Spec release
+|===
+endif::[]
+ifndef::liquid[]
+|===
+| Author | Date | Version | Change Details 
+| My Truong | May 2023 | 2.0 | Air-cooled Spec release
+|===
+endif::[]
+
+endif::[]
+
+<<<
+[preface]
+include::../book/definitions.adoc[]
+
+<<<
+:leveloffset: +1
+
+include::cages.adoc[]
+
+:leveloffset: -1
+
+:leveloffset: +2
+
+include::8ru_cage.adoc[]
+
+:leveloffset: -2
+
+== Liquid cooling support
+
+:leveloffset: +1
+
+include::../ch_brick_mechanical/mechanical_assist.adoc[]
+
+:leveloffset: -1
+
+=== Manifold attachments
+
+The 8RU cage provides consistent attachment points for both single-phase and two-phase liquid cooling manifolds. PEM nuts are available in every brick location.
+
+[#img-cage-manifold-attachment]
+.Cage manifold attachment
+
+image::chapters/ch_system_architecture/manifold_attachment.png[]
+
+{sp} +
+
+ifdef::liquid[]
+:leveloffset: +2
+
+include::8ru_manifold.adoc[]
+
+:leveloffset: -2
+
+:leveloffset: +2
+
+include::../../cooling/facility_temp.adoc[]
+
+:leveloffset: -2
+endif::[]
+
+== Open19 V2 Cable System Specification
+
+=== General
+
+The Open19 platform simplifies installation with blind-mate data and power interfaces. To facilitate inter-operability, aspects of the power shelf, brick, and data cable assemblies shall be defined. The cable systems are all completely passive. Components inheriting existing specifications (eg: SFP, QSFP, QSFP-DD) shall be compliant with the industry definitions.
+
+:leveloffset: +2
+
+include::brick_power_assembly.adoc[]
+
+:leveloffset: -2
+
+:leveloffset: +2
+
+include::brick_data_assembly.adoc[]
+
+:leveloffset: -2
+
+== Environmental Requirements
+
+The Open19 platform can operate in any data center environment with no special restrictions nor requirement. The two environmental requirements are:
+
+- Ambient air temperature  of 10-40&#0176;C at sea-level to 1000m elevation
+
+- Unobstructed front and back flow
+
+Noted that while an enclosed rack is also supported for the Open19 platform, the required airflow per disaggregated component in the platform needs to be reviewed separately in case of obstructed airflow.
+
+:leveloffset: +1
+
+include::appendix_system_architecture.adoc[]
+
+:leveloffset: -1
+

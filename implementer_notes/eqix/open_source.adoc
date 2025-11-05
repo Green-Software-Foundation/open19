@@ -1,0 +1,43 @@
+= Open Source Investments at Equinix
+
+Equinix makes continued investments in the open source ecosystem, especially those in the Linux Foundation. The Equinix Metal OSS program is link:https://metal.equinix.com/ecosystem/oss/[here].
+
+Equinix continues to support the pattern established in Open19 V1 power shelves. The software used on the management controller shall be based on the Linux Foundation OpenBMC implementation with every effort made to upstream the code. During the gap of code development and upstream acceptance, reference code shall be made available to the Open19 project.
+
+Functional expectations from OSS code are:
+- Reference implementations to all control features, monitors, and sensors (eg: eFuse on/off, PSU input voltage/load/etc). Areas lacking a reference implementation shall provide a reference schematic block necessary to implement the software feature.
+- Reference implementations necessary to complete compliance tests, eg: UL/CE/CCC
+- Reference implementations of an external API necessary to access above features. Eg: RESTful API to control efuse on/off function
+
+The initial LinkedIn link:https://github.com/linkedin/o19-bmc-firmware/[code release] provided the basis for a LF OpenBMC port. Sample contributions for the Delta V1 power shelf port are:
+
+-link:https://github.com/openbmc/u-boot/blob/v2019.04-aspeed-openbmc/arch/arm/dts/ast2400-ahe-50dc.dts[ device-tree in openbmc u-boot fork ]
+
+-link:https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/drivers/hwmon/pmbus/delta-ahe50dc-fan.c[ fan-control module driver in mainline kernel ]
+
+-link:https://github.com/openbmc/entity-manager/blob/master/configurations/Delta_AWF2DC3200W_PSU.json[ openbmc entity-manager config for the the PSUs used ]
+
+-link:https://git.kernel.org/pub/scm/linux/kernel/git/broonie/regulator.git/commit/?h=for-5.19&id=0f2d636e7d1fd76f704dd3ea5089ce29a8aee049[ regulator subsystem infrastructure patches for efuse driver support ]
+
+-link:https://git.kernel.org/pub/scm/linux/kernel/git/broonie/regulator.git/commit/?id=c3e3ca05dae37f8f74bb80358efd540911cbc2c8[ regulator subsystem infrastructure patches for efuse driver support ]
+
+-link:https://lore.kernel.org/openbmc/20220505232557.10936-1-zev@bewilderbeest.net/[Current iteration of efuse driver patches]
+
+Linux kernel contributions and changes to support specific devices:
+
+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=da78ad2b6b9b7308c5835428442fef8d73cea2e3
+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=e0f0307ac16fe69c6f9dcc8d14b532bc608fc989
+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=94ee5fcc240fe9ffdd1c3206a48d5bdf425ea478
+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=b7792f3ea3924a3534e392c1d9125fdc93a60d70
+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=df60a5daa7fb15f2602a6195e6c08d77a8ce1cdb
+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=b7931a7b0e0df4d2a25fedd895ad32c746b77bc1
+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=6d2ff184cbe727db3b104e41d38fe77546735fcd
+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=fa16188fa2053f23b1ed01cba5c43f4edc59005c
+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=ae59dc455a78fb73034dd1fbb337d7e59c27cbd8
+
+
+Equinix also continues to support the pattern established on server systems, with OpenBMC enabled server systems. The following systems were OpenBMC enabled with collaboration with system manufacturers:
+
+-link:https://github.com/openbmc/openbmc/tree/master/meta-asrock/meta-e3c246d4i/conf/machine[ E3C246D4I-NL ]
+
+-link:https://github.com/openbmc/linux/blob/dev-5.15/arch/arm/boot/dts/aspeed-bmc-asrock-romed8hm3.dts[ ROMED8HM3 ]

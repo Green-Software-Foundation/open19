@@ -1,0 +1,24 @@
+= Open19 data cable assembly
+
+Open19 V2 relaxes the data cable requirements and has moved the cables into implementation specific designs. The brick data connector provides definitions for all pins and usage, in order to enable interoperability for all brick designs. 
+
+The data cable shall provide, as needed, the EEPROM required for SFP, QSFP, and QSFP-DD connectors.
+
+== SFP breakout implementation
+
+The SFP28 breakout implementation supports four (4) SFP28 connections from each brick connector.
+
+[#img-sfp-cable]
+.SFP28 breakout cable
+
+image::chapters/ch_system_architecture/sfp_data_assy.png[]
+
+{sp} +
+
+[#img-cage-impel-attachment]
+.Cage Impel attachment
+
+image::chapters/ch_system_architecture/impel_cable_cage_attach.png[]
+
+{sp} +
+

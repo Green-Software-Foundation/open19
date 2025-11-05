@@ -1,0 +1,29 @@
+ifndef::imagesdir[:imagesdir: ../images/]
+
+= Brick electrical startup behavior
+
+In order to safely operate the power shelf, we define the following characteristics for brick startup behavior.
+
+[#img-serverstartup]
+.Server startup electrical characteristics
+image::power/server_startup.png[]
+
+{sp} +
+
+These values are per connector feed from a power shelf. 
+
+ifdef::shdw,dhhw[]
+Two power connectors are available for use.
+endif::[]
+
+ifdef::dhdw[]
+Four power connectors are available for use.
+endif::[]
+
+- Min start-up voltage: +44V DC
+- Max input capacitance per brick feed: <=1000uF
+- Max server current at start-up voltage: 70A
+- Ramp time: Follow Intel CRPS spec: ramp time 10-70msec, slew rate 0.5V/msec
+
+link:https://www.intel.com/content/dam/www/public/us/en/documents/guides/power-supply-design-guide-june.pdf[]
+

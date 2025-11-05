@@ -1,0 +1,50 @@
+ifndef::imagesdir[:imagesdir: ../../images]
+ifndef::brick[:brick: brick]
+ifndef::UBrick[:UBrick: Brick]
+ifndef::brickplus[:brickplus: brick]
+ifndef::bricktype[:bricktype: shhw]
+:xrefstyle: full
+
+= {UBrick} retention
+
+// Generic description for Southco fasteners
+ifndef::shhw,shdw,dhsw,dhdw[]
+
+{Ubrick} are secured into the cage with Southco D9-47-1302-K quarter-turn fasteners.
+
+endif::[]
+
+// Brick form
+ifdef::shhw[]
+
+The {brick} is secured into the cage with a single Southco D9-47-1302-K quarter-turn fastener, located on the left side of the faceplate. This is a change from V1. The change aligns the retention screw with high force areas of the optional liquid cooling interface.
+
+endif::[]
+
+// 1U brick
+ifdef::shdw[]
+
+The {brick} is secured into the cage with two Southco D9-47-1302-K quarter-turn fastener, located on the left and right side of the faceplate. 
+
+endif::[]
+
+// 2U 1/2W
+ifdef::dhsw[]
+
+The {brick} is secured into the cage with two Southco D9-47-1302-K quarter-turn fastener, located on the upper-left and lower-right side of the faceplate. 
+
+endif::[]
+
+// 2U brick
+ifdef::dhdw[]
+
+The {brick} is secured into the cage with up to four Southco D9-47-1302-K quarter-turn fasteners, located on the left and right side of the faceplate. 
+
+endif::[]
+
+[#img-{bricktype}-brick-retention]
+.{UBrick} retention
+
+image::chapters/ch_brick_mechanical/{bricktype}_brick_retention.png[]
+
+{sp} +
